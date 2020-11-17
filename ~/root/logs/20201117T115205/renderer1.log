@@ -1,0 +1,1 @@
+[2020-11-17 20:19:01.581] [renderer1] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?)). Details: Keys: history.entries Length: 2

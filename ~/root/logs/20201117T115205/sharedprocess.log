@@ -1,0 +1,3 @@
+[2020-11-17 11:52:09.040] [sharedprocess] [info] main {"machineId":"6f59b9fc84f5cbf7283e040a776bca636aeee7f116431637d04cfe3de30927b4","windowId":2}
+[2020-11-17 11:52:09.073] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/sms/Documents/my_filerouge/~/root/User/snippets'
+[2020-11-17 11:52:49.056] [sharedprocess] [info] Starting to clean up unused language packs.
