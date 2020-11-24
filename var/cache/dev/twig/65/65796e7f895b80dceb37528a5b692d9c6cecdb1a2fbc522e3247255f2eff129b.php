@@ -165,6 +165,6 @@ class __TwigTemplate_6b25800e060a41c4a867d4ecb892305ca09320640b8f9fbfa9d5e02ea61
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/sms/Documents/my_filerouge/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/sms/Documents/filerouge_sms/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

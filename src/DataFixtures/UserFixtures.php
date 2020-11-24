@@ -24,23 +24,29 @@ class UserFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $faker = Factory::create('fr_FR');
+        $profil= new Profil;
         for($j=0; $j<4; $j++)
         {
+            $profil= $this->getReference("profil ".$j);
             if($j==0){
-                $users= new User();
+                $users= new Formateur();
+                $profil->setLibelle("FORMATEUR");
+
             }
             elseif($j==1){
-                $users= new Apprenant();
+                $users= new CM();
+                $profil->setLibelle("CM");
             }
             elseif($j==2){
-                $users= new Formateur();
+                $users= new Apprenant();
+                $profil->setLibelle("APPRENANT");
             }
             else{
-                $users= new CM();
+                $users= new User();
+                $profil->setLibelle("ADMIN");
             }
-            $profil= $this->getReference("profil ".$j);
-            $profil= new Profil;
-            $profil->setLibelle("Apprenant");
+
+
             $users->setNom($faker->lastname);
             $users->setPrenom($faker->firstname);
             $users->setEmail($faker->email);

@@ -1,0 +1,8 @@
+[2020-11-19 08:10:50.965] [sharedprocess] [info] main {"machineId":"6f59b9fc84f5cbf7283e040a776bca636aeee7f116431637d04cfe3de30927b4","windowId":2}
+[2020-11-19 08:11:30.973] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-11-19 09:23:22.266] [sharedprocess] [info] Installing extension: akhail.save-typing
+[2020-11-19 09:23:22.852] [sharedprocess] [info] Downloaded extension: akhail.save-typing undefined
+[2020-11-19 09:23:22.886] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.akhail.save-typing-0.1.0: akhail.save-typing
+[2020-11-19 09:23:22.887] [sharedprocess] [info] Renamed to /root/.vscode/extensions/akhail.save-typing-0.1.0
+[2020-11-19 09:23:22.887] [sharedprocess] [info] Installation completed. akhail.save-typing
+[2020-11-19 09:23:22.889] [sharedprocess] [info] Extensions installed successfully: akhail.save-typing

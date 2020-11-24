@@ -143,6 +143,6 @@ class __TwigTemplate_ec27c6ee0e028e47e637572e9b98a696e5daf1acf0a84962e82e230723e
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/sms/Documents/my_filerouge/templates/base.html.twig");
+", "base.html.twig", "/home/sms/Documents/filerouge_sms/templates/base.html.twig");
     }
 }

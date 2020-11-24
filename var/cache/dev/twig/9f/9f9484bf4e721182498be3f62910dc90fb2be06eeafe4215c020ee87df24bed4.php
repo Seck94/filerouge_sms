@@ -133,6 +133,6 @@ class __TwigTemplate_407fc103db5321357526ae2accdb6b7875ca0c7b72d2d0c2b671eea0727
 
 </body>
 </html>
-", "@ApiPlatform/Graphiql/index.html.twig", "/home/sms/Documents/my_filerouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
+", "@ApiPlatform/Graphiql/index.html.twig", "/home/sms/Documents/filerouge_sms/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
     }
 }

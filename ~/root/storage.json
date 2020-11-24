@@ -2,6 +2,7 @@
     "telemetry.machineId": "6f59b9fc84f5cbf7283e040a776bca636aeee7f116431637d04cfe3de30927b4",
     "openedPathsList": {
         "workspaces3": [
+            "file:///home/sms/Documents/filerouge_sms",
             "file:///home/sms/Documents/my_filerouge"
         ],
         "files2": []
@@ -50,7 +51,18 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/sms/Documents/my_filerouge",
+                                        "fsPath": "/home/sms/Documents/filerouge_sms",
+                                        "external": "file:///home/sms/Documents/filerouge_sms",
+                                        "path": "/home/sms/Documents/filerouge_sms",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/sms/Documents/filerouge_sms"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/sms/Documents/my_filerouge",
                                         "path": "/home/sms/Documents/my_filerouge",
                                         "scheme": "file"
@@ -1454,8 +1466,8 @@
     "themeBackground": "#1e1e1e",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/sms/Documents/my_filerouge",
-            "backupPath": "/home/sms/Documents/my_filerouge/~/root/Backups/6d23ca7f75fe353a1f710b3e677e4be6",
+            "folder": "file:///home/sms/Documents/filerouge_sms",
+            "backupPath": "/home/sms/Documents/filerouge_sms/~/root/Backups/3e8cc54d8a77369b31a3e9d18b330907",
             "uiState": {
                 "mode": 0,
                 "x": 448,

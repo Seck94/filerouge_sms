@@ -1,0 +1,27 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/sms/Documents/filerouge_sms
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin

@@ -1,0 +1,31 @@
+[2020-11-23 15:38:12.277] [exthost] [info] extension host started
+[2020-11-23 15:38:12.400] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2020-11-23 15:38:12.400] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2020-11-23 15:38:12.416] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"extensionId":{"value":"vscode.php-language-features","_lower":"vscode.php-language-features"},"activationEvent":"onLanguage:php"}
+[2020-11-23 15:38:12.416] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/php-language-features/dist/phpMain
+[2020-11-23 15:38:12.429] [exthost] [info] ExtensionService#_doActivateExtension MehediDracula.php-namespace-resolver {"startup":false,"extensionId":{"value":"MehediDracula.php-namespace-resolver","_lower":"mehedidracula.php-namespace-resolver"},"activationEvent":"onLanguage:php"}
+[2020-11-23 15:38:12.429] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/mehedidracula.php-namespace-resolver-1.1.8/src/extension
+[2020-11-23 15:38:12.435] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-11-23 15:38:12.435] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-11-23 15:38:12.438] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-11-23 15:38:12.438] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2020-11-23 15:38:12.463] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-11-23 15:38:12.463] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/git/dist/main
+[2020-11-23 15:38:12.500] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-11-23 15:38:12.500] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2020-11-23 15:38:12.502] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-11-23 15:38:12.502] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-11-23 15:38:12.504] [exthost] [info] ExtensionService#_doActivateExtension akhail.save-typing {"startup":true,"extensionId":{"value":"akhail.save-typing","_lower":"akhail.save-typing"},"activationEvent":"*"}
+[2020-11-23 15:38:12.504] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/akhail.save-typing-0.1.0/out/extension
+[2020-11-23 15:38:12.691] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-11-23 15:38:12.691] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/github/dist/extension.js
+[2020-11-23 15:38:12.734] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2020-11-23 15:38:12.734] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2020-11-23 15:38:12.821] [exthost] [info] eager extensions activated
+[2020-11-23 15:38:12.856] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1586
+[2020-11-23 15:38:12.924] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2020-11-23 15:38:12.924] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/50/usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2020-11-23 15:38:14.738] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1590
+[2020-11-23 15:42:09.255] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1708
+[2020-11-23 15:42:14.389] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1692
+[2020-11-23 15:42:52.687] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1691

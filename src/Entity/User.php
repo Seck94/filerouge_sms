@@ -4,17 +4,57 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UserRepository;
+use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping\DiscriminatorColumn;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Security\Core\User\UserInterface;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
     
     * @ORM\InheritanceType("JOINED")
     * @ORM\DiscriminatorColumn(name="type", type="string")
-    * @ORM\DiscriminatorMap({"user" = "User", "apprenant" = "Apprenant", "formateur" = "Formateur", "cm"="CM", "admin" = "Admin"})
-    * @ApiResource()
+    * @ORM\DiscriminatorMap({"user" = "User", "apprenant" = "Apprenant", "formateur" = "Formateur", "cm"="CM","admin"="ADMIN"})
+    * @ApiResource(
+ *     attributes={
+ *          "security"="is_granted('ROLE_ADMIN')",
+ *          "normalization_context"={"groups"={"user_read","user_details_read"}}
+ *     },
+ * 
+ *     collectionOperations={
+ *          "add_user"={
+ *              "method"="POST",
+ *              "path"="/admin/users",
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas le privilege",
+ *              "normalization_context"={"groups"={"user_read"}}
+ *          },
+ *         "get"={
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas acces a cette ressource.",
+ *              "path"="admin/users",
+ *             
+ *          }
+ *     },
+ *     
+ *     itemOperations={
+ *         "get"={
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas ces privileges.",
+ *              "normalization_context"={"groups"={"user_read","user_details_read"}},
+ *              "path"="admin/users/{id}",
+ *              "defaults"={"id"=null}
+ *          },
+ *         "put"={
+ *              "security_post_denormalize"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas ces privileges.",
+ *              "path"="admin/users/{id}",
+ *          },
+ *     },)
+ * @ApiFilter(BooleanFilter::class, properties={"Archivage"})
+ * 
  */
 class User implements UserInterface
 {
@@ -22,11 +62,13 @@ class User implements UserInterface
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer") 
+     * @Groups({"user_read","profil_read"})
      */
     protected $id;
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
+     * @Groups({"user_read","profil_read","formateur_read"})
      */
     protected $username;
 
@@ -43,21 +85,25 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"user_read","profil_read","formateur_read"})
      */
     protected $Nom;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"user_read","profil_read","formateur_read"})
      */
     protected $Prenom;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"user_read","profil_read","formateur_read"})
      */
     protected $Email;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"user_read" ,"profil_read","formateur_read"})
      */
     protected $Statut;
 
@@ -68,8 +114,15 @@ class User implements UserInterface
 
     /**
      * @ORM\ManyToOne(targetEntity=Profil::class, inversedBy="users",cascade={"persist"})
+     * @Groups({"user_read" ,"profil_read","formateur_read"})
      */
     private $profil;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     * @Groups({"user_read"})
+     */
+    private $Archivage;
 
     public function getId(): ?int
     {
@@ -100,7 +153,7 @@ class User implements UserInterface
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
+        $roles[] = 'ROLE_'.$this->profil->getLibelle();
 
         return array_unique($roles);
     }
@@ -212,6 +265,18 @@ class User implements UserInterface
     public function setProfil(?Profil $profil): self
     {
         $this->profil = $profil;
+
+        return $this;
+    }
+
+    public function getArchivage(): ?bool
+    {
+        return $this->Archivage;
+    }
+
+    public function setArchivage(?bool $Archivage): self
+    {
+        $this->Archivage = $Archivage;
 
         return $this;
     }

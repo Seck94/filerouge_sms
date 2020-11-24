@@ -1,0 +1,1455 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/sms/Documents/filerouge_sms
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :src/DataFixtures/ProfilFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/ProfilFixtures.php
+> git cat-file -s f15c47214930cbd006a113680268b7dd35aef0ab
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git show --textconv :src/DataFixtures/ProfilFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/ProfilFixtures.php
+> git cat-file -s f15c47214930cbd006a113680268b7dd35aef0ab
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :.env
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/.env
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/DataFixtures/ProfilFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/ProfilFixtures.php
+> git cat-file -s f15c47214930cbd006a113680268b7dd35aef0ab
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :config/jwt/private.pem
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/config/jwt/private.pem
+> git cat-file -s 8a0e2414e28057225214b1e36bf0e5d79400e615
+> git show --textconv :config/jwt/public.pem
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/config/jwt/public.pem
+> git cat-file -s a3f22ea196bf6cd50c62b331bcb90951d619d25d
+> git check-ignore -v -z --stdin
+> git show --textconv :src/Entity/Formateur.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Formateur.php
+> git cat-file -s 24d43f0162ed7f4776b3547789449d96b0dc40fb
+> git show --textconv :src/Entity/Admin.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Admin.php
+> git cat-file -s 2c7471313f926857002cf4e063795d332aecf6bb
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/DataFixtures/ProfilFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/ProfilFixtures.php
+> git cat-file -s f15c47214930cbd006a113680268b7dd35aef0ab
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :.env
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/.env
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/Admin.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Admin.php
+> git cat-file -s 2c7471313f926857002cf4e063795d332aecf6bb
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/Apprenant.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Apprenant.php
+> git cat-file -s 1c3837e6f6b02eb55538604e69bc17e0f7fa2d6d
+> git show --textconv :src/Entity/Admin.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Admin.php
+> git cat-file -s 2c7471313f926857002cf4e063795d332aecf6bb
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :migrations/Version20201117205843.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/migrations/Version20201117205843.php
+> git show --textconv :src/Entity/Admin.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Admin.php
+> git cat-file -s 2c7471313f926857002cf4e063795d332aecf6bb
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git show --textconv :migrations/.gitignore
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/migrations/.gitignore
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git check-ignore -v -z --stdin
+> git show --textconv :src/Entity/Admin.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Admin.php
+> git cat-file -s 2c7471313f926857002cf4e063795d332aecf6bb
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/Apprenant.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Apprenant.php
+> git cat-file -s 1c3837e6f6b02eb55538604e69bc17e0f7fa2d6d
+> git show --textconv :src/Entity/CM.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/CM.php
+> git cat-file -s 9869385022d180df85b94f6a9f8ba68affa2c964
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git show --textconv :src/Entity/Formateur.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Formateur.php
+> git cat-file -s 24d43f0162ed7f4776b3547789449d96b0dc40fb
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :.env
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/.env
+> git show --textconv :src/Entity/Admin.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Admin.php
+> git cat-file -s 2c7471313f926857002cf4e063795d332aecf6bb
+> git show --textconv :src/Entity/Apprenant.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Apprenant.php
+> git cat-file -s 1c3837e6f6b02eb55538604e69bc17e0f7fa2d6d
+> git show --textconv :src/Entity/Admin.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Admin.php
+> git cat-file -s 2c7471313f926857002cf4e063795d332aecf6bb
+> git show --textconv :src/Entity/Apprenant.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Apprenant.php
+> git cat-file -s 1c3837e6f6b02eb55538604e69bc17e0f7fa2d6d
+> git show --textconv :src/Entity/Admin.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Admin.php
+> git cat-file -s 2c7471313f926857002cf4e063795d332aecf6bb
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/Apprenant.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Apprenant.php
+> git cat-file -s 1c3837e6f6b02eb55538604e69bc17e0f7fa2d6d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/DataFixtures/ProfilFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/ProfilFixtures.php
+> git cat-file -s f15c47214930cbd006a113680268b7dd35aef0ab
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/DataFixtures/ProfilFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/ProfilFixtures.php
+> git cat-file -s f15c47214930cbd006a113680268b7dd35aef0ab
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/AdminController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/AdminController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/AdminController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/AdminController.php
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/AdminController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/AdminController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/Controller/AdminController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/AdminController.php
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git show --textconv :src/Entity/Apprenant.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Apprenant.php
+> git cat-file -s 1c3837e6f6b02eb55538604e69bc17e0f7fa2d6d
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/Controller/AdminController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/AdminController.php
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/AdminController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/AdminController.php
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git check-ignore -v -z --stdin
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git show --textconv :src/Entity/Formateur.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Formateur.php
+> git cat-file -s 24d43f0162ed7f4776b3547789449d96b0dc40fb
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git show --textconv :src/DataFixtures/ProfilFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/ProfilFixtures.php
+> git cat-file -s f15c47214930cbd006a113680268b7dd35aef0ab
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git config --get commit.template
+> git show --textconv :migrations/Version20201118115211.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/migrations/Version20201118115211.php
+> git show --textconv :src/DataFixtures/ProfilFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/ProfilFixtures.php
+> git cat-file -s f15c47214930cbd006a113680268b7dd35aef0ab
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/AdminController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/AdminController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git check-ignore -v -z --stdin
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/Controller/AdminController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/AdminController.php
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git show --textconv :src/Entity/User.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/User.php
+> git cat-file -s ceb4cb3d47864ed607ecbb1d74e4da8cc0f09da4
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :src/Security/Voter/ProfilVoter.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Security/Voter/ProfilVoter.php
+> git show --textconv :src/Controller/FormateurController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/FormateurController.php
+> git show --textconv :src/Controller/ApprenantController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/ApprenantController.php
+> git show --textconv :src/Controller/AdminController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/AdminController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Security/Voter/ProfilVoter.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Security/Voter/ProfilVoter.php
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git show --textconv :src/Security/Voter/ProfilVoter.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Security/Voter/ProfilVoter.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Entity/Profil.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Entity/Profil.php
+> git cat-file -s 62f33fe3b85a448306aa73c4cd17a78ce65dcdf7
+> git show --textconv :src/Security/Voter/ProfilVoter.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Security/Voter/ProfilVoter.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/DataFixtures/UserFixtures.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/DataFixtures/UserFixtures.php
+> git cat-file -s f92a538dbd644a742f06c7c79af981455141b15b
+> git show --textconv :src/Controller/UserController.php
+> git ls-files --stage -- /home/sms/Documents/filerouge_sms/src/Controller/UserController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

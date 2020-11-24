@@ -14,3 +14,4 @@ Use '--' to separate paths from revisions, like this:
 > git show --textconv :src/DataFixtures/UserFixtures.php
 > git ls-files --stage -- /home/sms/Documents/my_filerouge/src/DataFixtures/UserFixtures.php
 > git check-ignore -v -z --stdin
+> git status -z -u

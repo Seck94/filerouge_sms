@@ -3,7 +3,6 @@
 namespace App\DataFixtures;
 
 use App\Entity\CM;
-use App\Entity\Admin;
 use App\Entity\Profil;
 use App\Entity\Apprenant;
 use App\Entity\Formateur;
@@ -16,13 +15,13 @@ class ProfilFixtures extends Fixture
     {
          
          
-        $profils=['FORMATEUR','CM','APPRENANT','USER'];
+        $profils=['FORMATEUR','CM','APPRENANT','ADMIN'];
         for ($i = 0; $i < count($profils); $i++) {
             
             $profil= new Profil();
             $profil->setLibelle($profils[$i]);
 
-            if($profils[$i]=="USER")
+            if($profils[$i]=="ADMIN")
             {
                 $this->addReference("profil 0", $profil);
             }

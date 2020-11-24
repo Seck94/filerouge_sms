@@ -9,3 +9,6 @@
 [2020-11-17 14:52:35.974] [main] [info] update#setState idle
 [2020-11-17 15:52:36.027] [main] [info] update#setState checking for updates
 [2020-11-17 15:52:36.050] [main] [info] update#setState idle
+[2020-11-17 20:22:14.811] [main] [info] update#setState checking for updates
+[2020-11-17 20:22:14.821] [main] [info] update#setState idle
+[2020-11-17 20:24:04.858] [main] [error] [storage state.vscdb] backup(): Error: ENOENT: no such file or directory, stat '/home/sms/Documents/my_filerouge/~/root/User/globalStorage/state.vscdb'

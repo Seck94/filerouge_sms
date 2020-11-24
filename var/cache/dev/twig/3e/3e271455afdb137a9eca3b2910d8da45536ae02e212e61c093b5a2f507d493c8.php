@@ -375,6 +375,6 @@ class __TwigTemplate_1832e838bc5326a9a71141d0074105e3975da68d1fb02e82f0282b782fa
 
 </body>
 </html>
-", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/sms/Documents/my_filerouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
+", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/sms/Documents/filerouge_sms/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
     }
 }

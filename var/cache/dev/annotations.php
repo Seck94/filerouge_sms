@@ -61,10 +61,10 @@ return [[
 '%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container%5D%5B1%5D' => 1,
 '%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CApprenant%5D%5B1%5D' => 3,
-'%5B%5BC%5DApp%5CEntity%5CApprenant%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CApprenant%23getId%5D%5B1%5D' => 1,
-'%5B%5BC%5DApp%5CEntity%5CApprenant%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CADMIN%5D%5B1%5D' => 3,
+'%5B%5BC%5DApp%5CEntity%5CADMIN%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CADMIN%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CADMIN%23getId%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CUser%23getUsername%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CUser%23getUsername%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CUser%23setUsername%5D%5B1%5D' => 1,
@@ -105,8 +105,12 @@ return [[
 '%5B%5BC%5DApp%5CEntity%5CUser%23getProfil%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CUser%23setProfil%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CUser%23setProfil%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CApprenant%24id%5D%5B1%5D' => 4,
-'%5B%5BC%5DApp%5CEntity%5CApprenant%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CUser%23getArchivage%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CUser%23getArchivage%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CUser%23setArchivage%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CUser%23setArchivage%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CADMIN%24id%5D%5B1%5D' => 4,
+'%5B%5BC%5DApp%5CEntity%5CADMIN%24id%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CUser%24username%5D%5B1%5D' => 5,
 '%5B%5BC%5DApp%5CEntity%5CUser%24username%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CUser%24roles%5D%5B1%5D' => 6,
@@ -123,19 +127,25 @@ return [[
 '%5B%5BC%5DApp%5CEntity%5CUser%24Statut%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CUser%24Avatar%5D%5B1%5D' => 9,
 '%5B%5BC%5DApp%5CEntity%5CUser%24Avatar%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CCM%5D%5B1%5D' => 10,
+'%5BApp%5CEntity%5CApprenant%5D%5B1%5D' => 10,
+'%5B%5BC%5DApp%5CEntity%5CApprenant%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CApprenant%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CApprenant%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CApprenant%24id%5D%5B1%5D' => 4,
+'%5B%5BC%5DApp%5CEntity%5CApprenant%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CCM%5D%5B1%5D' => 11,
 '%5B%5BC%5DApp%5CEntity%5CCM%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCM%23getId%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CCM%23getId%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCM%24id%5D%5B1%5D' => 4,
 '%5B%5BC%5DApp%5CEntity%5CCM%24id%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CFormateur%5D%5B1%5D' => 11,
+'%5BApp%5CEntity%5CFormateur%5D%5B1%5D' => 12,
 '%5B%5BC%5DApp%5CEntity%5CFormateur%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CFormateur%23getId%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CFormateur%23getId%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CFormateur%24id%5D%5B1%5D' => 4,
 '%5B%5BC%5DApp%5CEntity%5CFormateur%24id%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CProfil%5D%5B1%5D' => 12,
+'%5BApp%5CEntity%5CProfil%5D%5B1%5D' => 13,
 '%5B%5BC%5DApp%5CEntity%5CProfil%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CProfil%23__construct%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CProfil%23__construct%5D%5B1%5D' => 2,
@@ -151,20 +161,28 @@ return [[
 '%5B%5BC%5DApp%5CEntity%5CProfil%23addUser%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CProfil%23removeUser%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CProfil%23removeUser%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CProfil%24id%5D%5B1%5D' => 4,
+'%5BApp%5CEntity%5CProfil%23getStatut%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CProfil%23getStatut%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CProfil%23setStatut%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CProfil%23setStatut%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CProfil%24id%5D%5B1%5D' => 14,
 '%5B%5BC%5DApp%5CEntity%5CProfil%24id%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CProfil%24Libelle%5D%5B1%5D' => 8,
+'%5BApp%5CEntity%5CProfil%24Libelle%5D%5B1%5D' => 15,
 '%5B%5BC%5DApp%5CEntity%5CProfil%24Libelle%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CProfil%24users%5D%5B1%5D' => 13,
+'%5BApp%5CEntity%5CProfil%24users%5D%5B1%5D' => 16,
 '%5B%5BC%5DApp%5CEntity%5CProfil%24users%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CUser%5D%5B1%5D' => 14,
+'%5BApp%5CEntity%5CProfil%24Statut%5D%5B1%5D' => 17,
+'%5B%5BC%5DApp%5CEntity%5CProfil%24Statut%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CUser%5D%5B1%5D' => 18,
 '%5B%5BC%5DApp%5CEntity%5CUser%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CUser%23getId%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CUser%23getId%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CUser%24id%5D%5B1%5D' => 4,
+'%5BApp%5CEntity%5CUser%24id%5D%5B1%5D' => 19,
 '%5B%5BC%5DApp%5CEntity%5CUser%24id%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CUser%24profil%5D%5B1%5D' => 15,
+'%5BApp%5CEntity%5CUser%24profil%5D%5B1%5D' => 20,
 '%5B%5BC%5DApp%5CEntity%5CUser%24profil%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CUser%24Archivage%5D%5B1%5D' => 21,
+'%5B%5BC%5DApp%5CEntity%5CUser%24Archivage%5D%5B1%5D' => 2,
 '%5BDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%5D%5B1%5D' => 1,
 '%5B%5BC%5DDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%5D%5B1%5D' => 2,
 '%5BDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%23setContainer%5D%5B1%5D' => 1,
@@ -638,22 +656,91 @@ return [[
 
 0 => 'N;',
 1 => [],
-2 => 1605615988,
+2 => 1606211318,
 3 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+            clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
         ],
         null,
         [
             'stdClass' => [
                 'repositoryClass' => [
-                    'App\\Repository\\ApprenantRepository',
+                    'App\\Repository\\ADMINRepository',
+                ],
+                'name' => [
+                    1 => '`admin`',
+                ],
+                'collectionOperations' => [
+                    2 => [
+                        'add_apprenant' => [
+                            'method' => 'POST',
+                            'path' => '/admin/admins',
+                            'security' => 'is_granted(\'ROLE_ADMIN\') or is_granted(\'ROLE_CM\')',
+                            'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                        ],
+                        'get' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                            'path' => 'admin/admins',
+                        ],
+                        'get_apprenants' => [
+                            'method' => 'GET',
+                            'path' => '/admins',
+                            'security' => '(is_granted(\'ROLE_ADMIN\'))',
+                            'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        ],
+                    ],
+                ],
+                'itemOperations' => [
+                    2 => [
+                        'get' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/admins/{id}',
+                            'defaults' => [
+                                'id' => null,
+                            ],
+                        ],
+                        'get_apprenant' => [
+                            'method' => 'GET',
+                            'path' => '/admins/{id}',
+                            'requirements' => [
+                                'id' => '\\d+',
+                            ],
+                            'security' => '(is_granted(\'ROLE_FORMATEUR\'))',
+                            'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                        ],
+                        'delete' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/admins/{id}',
+                        ],
+                        'patch' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/admins/{id}',
+                        ],
+                        'put' => [
+                            'security_post_denormalize' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/admins/{id}',
+                        ],
+                    ],
+                ],
+                'attributes' => [
+                    2 => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    ],
                 ],
             ],
         ],
         [
             $o[0],
+            $o[1],
+            $o[2],
         ],
         []
     );
@@ -684,7 +771,8 @@ return [[
 5 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
         ],
         null,
         [
@@ -696,9 +784,19 @@ return [[
                     true,
                 ],
             ],
+            'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+                'groups' => [
+                    1 => [
+                        'user_read',
+                        'profil_read',
+                        'formateur_read',
+                    ],
+                ],
+            ],
         ],
         [
             $o[0],
+            $o[1],
         ],
         []
     );
@@ -738,7 +836,8 @@ return [[
 8 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
         ],
         null,
         [
@@ -747,9 +846,19 @@ return [[
                     255,
                 ],
             ],
+            'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+                'groups' => [
+                    1 => [
+                        'user_read',
+                        'profil_read',
+                        'formateur_read',
+                    ],
+                ],
+            ],
         ],
         [
             $o[0],
+            $o[1],
         ],
         []
     );
@@ -765,6 +874,9 @@ return [[
                 'type' => [
                     'blob',
                 ],
+                'nullable' => [
+                    true,
+                ],
             ],
         ],
         [
@@ -776,7 +888,101 @@ return [[
 10 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\ApprenantRepository',
+                ],
+                'collectionOperations' => [
+                    1 => [
+                        'post' => [
+                            'path' => '/admin/apprenants',
+                            'security' => 'is_granted(\'ROLE_ADMIN\') or is_granted(\'ROLE_CM\')',
+                            'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                        ],
+                        'get' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                            'path' => 'admin/apprenants',
+                            'normalization_context' => [
+                                'groups' => [
+                                    'apprenant_read',
+                                ],
+                            ],
+                        ],
+                        'get_apprenants' => [
+                            'method' => 'GET',
+                            'path' => '/apprenants',
+                            'security' => '(is_granted(\'ROLE_ADMIN\'))',
+                            'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        ],
+                    ],
+                ],
+                'itemOperations' => [
+                    1 => [
+                        'get' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/apprenants/{id}',
+                            'defaults' => [
+                                'id' => null,
+                            ],
+                        ],
+                        'get_apprenant' => [
+                            'method' => 'GET',
+                            'path' => '/apprenants/{id}',
+                            'requirements' => [
+                                'id' => '\\d+',
+                            ],
+                            'security' => '(is_granted(\'ROLE_FORMATEUR\'))',
+                            'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                        ],
+                        'delete' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/apprenants/{id}',
+                        ],
+                        'patch' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/apprenants/{id}',
+                        ],
+                        'put' => [
+                            'security_post_denormalize' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/apprenants/{id}',
+                        ],
+                    ],
+                ],
+                'attributes' => [
+                    1 => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'normalization_context' => [
+                            'groups' => [
+                                'apprenant_read',
+                                'apprenant_details_read',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+        ],
+        []
+    );
+},
+11 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
         ],
         null,
         [
@@ -788,25 +994,7 @@ return [[
         ],
         [
             $o[0],
-        ],
-        []
-    );
-},
-11 => static function () {
-    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
-        $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
-        ],
-        null,
-        [
-            'stdClass' => [
-                'repositoryClass' => [
-                    'App\\Repository\\FormateurRepository',
-                ],
-            ],
-        ],
-        [
-            $o[0],
+            $o[1],
         ],
         []
     );
@@ -814,7 +1002,97 @@ return [[
 12 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\FormateurRepository',
+                ],
+                'collectionOperations' => [
+                    1 => [
+                        'add_formateur' => [
+                            'method' => 'POST',
+                            'path' => '/admin/formateurs',
+                            'security' => 'is_granted(\'ROLE_ADMIN\'))',
+                            'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                        ],
+                        'get' => [
+                            'path' => '/admin/formateurs',
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                            'normalization_context' => [
+                                'groups' => [
+                                    'formateur_read',
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                'itemOperations' => [
+                    1 => [
+                        'get' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/formateurs/{id}',
+                            'defaults' => [
+                                'id' => null,
+                            ],
+                        ],
+                        'get_formateur' => [
+                            'method' => 'GET',
+                            'path' => '/formateurs/{id}',
+                            'requirements' => [
+                                'id' => '\\d+',
+                            ],
+                            'security' => '(is_granted(\'ROLE_FORMATEUR\'))',
+                            'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                        ],
+                        'delete' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/formateurs/{id}',
+                        ],
+                        'patch' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/formateurs/{id}',
+                        ],
+                        'put' => [
+                            'path' => 'admin/formateurs/{id}',
+                            'security_post_denormalize' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                        ],
+                    ],
+                ],
+                'attributes' => [
+                    1 => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'normalization_context' => [
+                            'groups' => [
+                                'formateur_read',
+                                'formateur_details_read',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+        ],
+        []
+    );
+},
+13 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+            clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
         ],
         null,
         [
@@ -822,15 +1100,133 @@ return [[
                 'repositoryClass' => [
                     'App\\Repository\\ProfilRepository',
                 ],
+                'collectionOperations' => [
+                    1 => [
+                        'post' => [
+                            'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                            'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                            'path' => 'admin/profils',
+                        ],
+                        'get' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                            'path' => 'admin/profils',
+                        ],
+                    ],
+                ],
+                'itemOperations' => [
+                    1 => [
+                        'get' => [
+                            'security' => 'is_granted(\'VIEW\',object)',
+                            'security_message' => 'Vous n\'avez pas ce privilege.',
+                            'path' => 'admin/profils/{id}',
+                        ],
+                        'delete' => [
+                            'security' => 'is_granted(\'EDIT\',object)',
+                            'security_message' => 'Vous n\'avez pas ce privilege merci de garder les bonnes informations afin d\'avoir cette possibilité.',
+                            'path' => 'admin/profils/{id}',
+                        ],
+                        'patch' => [
+                            'security' => 'is_granted(\'EDIT\',object)',
+                            'security_message' => 'Vous n\'avez pas ce privilege.',
+                            'path' => 'admin/profils/{id}',
+                        ],
+                        'put' => [
+                            'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                            'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                            'path' => 'admin/profils/{id}',
+                        ],
+                    ],
+                ],
+                'attributes' => [
+                    1 => [
+                        'normalization_context' => [
+                            'groups' => [
+                                'profil_read',
+                                'profil_details_read',
+                            ],
+                        ],
+                    ],
+                ],
+                'filterClass' => [
+                    2 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\BooleanFilter',
+                ],
+                'properties' => [
+                    2 => [
+                        'Statut',
+                    ],
+                ],
             ],
         ],
         [
             $o[0],
+            $o[1],
+            $o[2],
         ],
         []
     );
 },
-13 => static function () {
+14 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Id'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Id')),
+            clone ($p['Doctrine\\ORM\\Mapping\\GeneratedValue'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\GeneratedValue')),
+            clone ($p['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    2 => 'integer',
+                ],
+            ],
+            'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+                'groups' => [
+                    3 => [
+                        'profil_details_read',
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+            $o[2],
+            $o[3],
+        ],
+        []
+    );
+},
+15 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'length' => [
+                    255,
+                ],
+            ],
+            'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+                'groups' => [
+                    1 => [
+                        'profil_details_read',
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+        ],
+        []
+    );
+},
+16 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\OneToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\OneToMany')),
@@ -852,7 +1248,38 @@ return [[
         []
     );
 },
-14 => static function () {
+17 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'boolean',
+                ],
+                'nullable' => [
+                    true,
+                ],
+            ],
+            'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+                'groups' => [
+                    1 => [
+                        'profil_read',
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+        ],
+        []
+    );
+},
+18 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
@@ -860,6 +1287,7 @@ return [[
             clone ($p['Doctrine\\ORM\\Mapping\\DiscriminatorColumn'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\DiscriminatorColumn')),
             clone ($p['Doctrine\\ORM\\Mapping\\DiscriminatorMap'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\DiscriminatorMap')),
             clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+            clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
         ],
         null,
         [
@@ -874,6 +1302,7 @@ return [[
                         'apprenant' => 'Apprenant',
                         'formateur' => 'Formateur',
                         'cm' => 'CM',
+                        'admin' => 'ADMIN',
                     ],
                 ],
                 'name' => [
@@ -881,6 +1310,68 @@ return [[
                 ],
                 'type' => [
                     2 => 'string',
+                ],
+                'collectionOperations' => [
+                    4 => [
+                        'add_user' => [
+                            'method' => 'POST',
+                            'path' => '/admin/users',
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas le privilege',
+                            'normalization_context' => [
+                                'groups' => [
+                                    'user_read',
+                                ],
+                            ],
+                        ],
+                        'get' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                            'path' => 'admin/users',
+                        ],
+                    ],
+                ],
+                'itemOperations' => [
+                    4 => [
+                        'get' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'normalization_context' => [
+                                'groups' => [
+                                    'user_read',
+                                    'user_details_read',
+                                ],
+                            ],
+                            'path' => 'admin/users/{id}',
+                            'defaults' => [
+                                'id' => null,
+                            ],
+                        ],
+                        'put' => [
+                            'security_post_denormalize' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/users/{id}',
+                        ],
+                    ],
+                ],
+                'attributes' => [
+                    4 => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'normalization_context' => [
+                            'groups' => [
+                                'user_read',
+                                'user_details_read',
+                            ],
+                        ],
+                    ],
+                ],
+                'filterClass' => [
+                    5 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\BooleanFilter',
+                ],
+                'properties' => [
+                    5 => [
+                        'Archivage',
+                    ],
                 ],
             ],
         ],
@@ -890,14 +1381,49 @@ return [[
             $o[2],
             $o[3],
             $o[4],
+            $o[5],
         ],
         []
     );
 },
-15 => static function () {
+19 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToOne'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToOne')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Id'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Id')),
+            clone ($p['Doctrine\\ORM\\Mapping\\GeneratedValue'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\GeneratedValue')),
+            clone ($p['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    2 => 'integer',
+                ],
+            ],
+            'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+                'groups' => [
+                    3 => [
+                        'user_read',
+                        'profil_read',
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+            $o[2],
+            $o[3],
+        ],
+        []
+    );
+},
+20 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ManyToOne'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToOne')),
+            clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
         ],
         null,
         [
@@ -914,9 +1440,50 @@ return [[
                     'users',
                 ],
             ],
+            'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+                'groups' => [
+                    1 => [
+                        'user_read',
+                        'profil_read',
+                        'formateur_read',
+                    ],
+                ],
+            ],
         ],
         [
             $o[0],
+            $o[1],
+        ],
+        []
+    );
+},
+21 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'boolean',
+                ],
+                'nullable' => [
+                    true,
+                ],
+            ],
+            'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+                'groups' => [
+                    1 => [
+                        'user_read',
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
         ],
         []
     );

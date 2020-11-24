@@ -2,13 +2,59 @@
 
 namespace App\Entity;
 
-use App\Repository\ProfilRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\ProfilRepository;
+use ApiPlatform\Core\Annotation\ApiFilter;
+use Doctrine\Common\Collections\Collection;
+use ApiPlatform\Core\Annotation\ApiResource;
+use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Serializer\Annotation\Groups;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
 
 /**
  * @ORM\Entity(repositoryClass=ProfilRepository::class)
+ * @ApiResource(
+ *     attributes={
+ *          "normalization_context"={"groups"={"profil_read","profil_details_read"}}
+ *      },
+ *     collectionOperations={
+ *         "post"={
+ *              "security_post_denormalize"="is_granted('EDIT', object)", 
+ *              "security_post_denormalize_message"="Vous n'avez pas ce privilege.",
+ *              "path"="admin/profils",
+ *          },
+ *         "get"={
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas acces a cette ressource.",
+ *              "path"="admin/profils",
+ *              
+ *              },
+ *     },
+ *     
+ *     itemOperations={
+ *         "get"={
+ *              "security"="is_granted('VIEW',object)", 
+ *              "security_message"="Vous n'avez pas ce privilege.",
+ *              "path"="admin/profils/{id}",
+ *         }, 
+ *         "delete"={
+ *              "security"="is_granted('EDIT',object)",
+ *              "security_message"="Vous n'avez pas ce privilege merci de garder les bonnes informations afin d'avoir cette possibilité.",
+ *              "path"="admin/profils/{id}",
+ *         },
+ *         "patch"={
+ *              "security"="is_granted('EDIT',object)", 
+ *              "security_message"="Vous n'avez pas ce privilege.",
+ *              "path"="admin/profils/{id}",
+ *         },
+ *         "put"={
+ *              "security_post_denormalize"="is_granted('EDIT', object)", 
+ *              "security_post_denormalize_message"="Vous n'avez pas ce privilege.",
+ *              "path"="admin/profils/{id}",
+ *         },
+ *     },
+ * )
+ * @ApiFilter(BooleanFilter::class, properties={"Statut"})
  */
 class Profil
 {
@@ -16,19 +62,31 @@ class Profil
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"profil_details_read"})
+     * 
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"profil_details_read"})
      */
     private $Libelle;
 
     /**
      * @ORM\OneToMany(targetEntity=User::class, mappedBy="profil")
+     * 
+     * 
      */
     private $users;
 
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     * @Groups({"profil_read"})
+     */
+    private $Statut = false;
+
+   
     public function __construct()
     {
         $this->users = new ArrayCollection();
@@ -80,4 +138,18 @@ class Profil
 
         return $this;
     }
+
+    public function getStatut(): ?bool
+    {
+        return $this->Statut;
+    }
+
+    public function setStatut(?bool $Statut): self
+    {
+        $this->Statut = $Statut;
+
+        return $this;
+    }
+
+   
 }
