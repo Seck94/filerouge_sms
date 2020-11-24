@@ -53,7 +53,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
  *              "security_message"="Vous n'avez pas ces privileges.",
  *              "path"="admin/formateurs/{id}",
  *          },
- *         "edit_formateur"={
+ *         "put"={
  *              "path"="admin/formateurs/{id}",
  *              "security_post_denormalize"="is_granted('ROLE_ADMIN')",
  *              "security_message"="Vous n'avez pas ces privileges."

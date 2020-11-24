@@ -656,7 +656,7 @@ return [[
 
 0 => 'N;',
 1 => [],
-2 => 1606211318,
+2 => 1606228229,
 3 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
@@ -989,6 +989,73 @@ return [[
             'stdClass' => [
                 'repositoryClass' => [
                     'App\\Repository\\CMRepository',
+                ],
+                'collectionOperations' => [
+                    1 => [
+                        'add_formateur' => [
+                            'method' => 'POST',
+                            'path' => '/admin/cms',
+                            'security' => 'is_granted(\'ROLE_ADMIN\'))',
+                            'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                        ],
+                        'get' => [
+                            'path' => '/admin/cms',
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                            'normalization_context' => [
+                                'groups' => [
+                                    'formateur_read',
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                'itemOperations' => [
+                    1 => [
+                        'get' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/cms/{id}',
+                            'defaults' => [
+                                'id' => null,
+                            ],
+                        ],
+                        'get_formateur' => [
+                            'method' => 'GET',
+                            'path' => '/cms/{id}',
+                            'requirements' => [
+                                'id' => '\\d+',
+                            ],
+                            'security' => '(is_granted(\'ROLE_FORMATEUR\'))',
+                            'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                        ],
+                        'delete' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/cms/{id}',
+                        ],
+                        'patch' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                            'path' => 'admin/cms/{id}',
+                        ],
+                        'put' => [
+                            'path' => 'admin/cms/{id}',
+                            'security_post_denormalize' => 'is_granted(\'ROLE_ADMIN\')',
+                            'security_message' => 'Vous n\'avez pas ces privileges.',
+                        ],
+                    ],
+                ],
+                'attributes' => [
+                    1 => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'normalization_context' => [
+                            'groups' => [
+                                'cm_read',
+                                'cm_details_read',
+                            ],
+                        ],
+                    ],
                 ],
             ],
         ],

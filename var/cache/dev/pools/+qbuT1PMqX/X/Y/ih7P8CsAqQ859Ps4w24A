@@ -135,13 +135,13 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                             ],
                         ],
                     ],
-                    'edit_formateur' => [
+                    'put' => [
                         'path' => 'admin/formateurs/{id}',
                         'security_post_denormalize' => 'is_granted(\'ROLE_ADMIN\')',
                         'security_message' => 'Vous n\'avez pas ces privileges.',
                         'input' => null,
                         'output' => null,
-                        'route_name' => 'edit_formateur',
+                        'method' => 'PUT',
                         'input_formats' => [
                             'jsonld' => [
                                 'application/ld+json',

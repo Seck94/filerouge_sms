@@ -39,15 +39,16 @@ class FormateurController extends AbstractController
      *     }
      * )
      */
-    public function updateFormateur(UserService $update,Request $request, EntityManagerInterface $manager,FormateurRepository $formateurRepository,$id=null)
+    public function updateFormateur(UserService $update,Request $request, EntityManagerInterface $manager,FormateurRepository $formateurRepository,int $id)
     {
         $user=$formateurRepository->findById($id);
+        //dd($user);
         if (!$user)
         {
             return $this ->json("Cette utilisateur n existe pas !!!", Response::HTTP_NOT_FOUND);
         }
-        $user = $update->EditUser($request,"FORMATEUR", "App\Entity\Formateur",$id);
-        $manager->persist($user);
+        $user = $update->EditUser($request,"FORMATEUR", $user[0],$id);
+
         $manager->flush();
         return $this->json("Vous venez de faire une modification pour formateur", Response::HTTP_CREATED);
     }

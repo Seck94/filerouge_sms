@@ -66,17 +66,26 @@ class UserService
 
 
 
-    public function EditUser($request, $type, $entity , $id=null)
+    public function EditUser($request, $type , $user)
     {
 
-        $user = $request->request->all();
+        $data = $request->request->all();
         $profil = $this->profil_R->findBy(["Libelle"=>$type]);
         $avatar = $request->files->get("Avatar");
         if ($avatar) {
             $avatar = fopen($avatar->getRealPath(), "rb");
-            $user["Avatar"] = $avatar;
+            $data["Avatar"] = $avatar;
         }
-        $user = $this->serializer->denormalize($user,$entity);
+        foreach ($data as $key=>$value){
+            if ($key !=="_method")
+            {
+                //echo $key."  ".$value;
+                $key = ucfirst($key);
+                $set = "set".$key;
+                $user->$set($value);
+
+            }
+    }
         $errors = $this->validator->validate($user);
         if ($errors) {
             $errors = $this->serializer->serialize($errors, "json");
