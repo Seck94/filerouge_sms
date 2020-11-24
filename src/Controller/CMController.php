@@ -40,14 +40,14 @@ class CMController extends AbstractController
      *     }
      * )
      */
-    public function updateCm(UserService $update,Request $request, EntityManagerInterface $manager,CMRepository $CMRepository,$id=null)
+    public function updateCm(UserService $update,Request $request, EntityManagerInterface $manager,CMRepository $CMRepository,int $id)
     {
         $user=$CMRepository->findById($id);
         if (!$user)
         {
             return $this ->json("Cette utilisateur n existe pas !!!", Response::HTTP_NOT_FOUND);
         }
-        $user = $update->EditUser($request,"CM", "App\Entity\Cm",$id);
+        $user = $update->EditUser($request,"CM", $user[0],$id);
 
         $manager->flush();
         return $this->json("Vous venez de faire une modification pour le cm", Response::HTTP_CREATED);
