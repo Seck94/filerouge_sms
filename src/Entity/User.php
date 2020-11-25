@@ -128,6 +128,7 @@ class User implements UserInterface
 
     /**
      * @ORM\OneToMany(targetEntity=GroupeCompetence::class, mappedBy="user")
+     * @Groups({"user_read"})
      */
     private $GroupeCompetence;
 

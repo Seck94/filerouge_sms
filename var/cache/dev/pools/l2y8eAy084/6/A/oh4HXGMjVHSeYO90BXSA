@@ -2,7 +2,8 @@
 
 return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
     $o = [
-        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
     ],
     null,
     [
@@ -10,10 +11,57 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
             'repositoryClass' => [
                 'App\\Repository\\CompetenceRepository',
             ],
+            'collectionOperations' => [
+                1 => [
+                    'add_competence' => [
+                        'method' => 'POST',
+                        'path' => 'admin/competences',
+                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                    ],
+                    'show_groupecompetence' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'admin/competences',
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                1 => [
+                    'get' => [
+                        'security' => 'is_granted(\'VIEW\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'admin/competences/{id}',
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'DELETE\',object)',
+                        'security_message' => 'Seul le proprietaite....',
+                        'path' => 'admin/competences/{id}',
+                    ],
+                    'update_competence' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'admin/competences/{id}',
+                    ],
+                ],
+            ],
+            'attributes' => [
+                1 => [
+                    'normalization_context' => [
+                        'groups' => [
+                            'competence_read',
+                            'competence_details_read',
+                        ],
+                    ],
+                ],
+            ],
         ],
     ],
     [
         $o[0],
+        $o[1],
     ],
     []
 ); }];

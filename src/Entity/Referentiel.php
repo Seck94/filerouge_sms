@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ReferentielRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -9,6 +10,67 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=ReferentielRepository::class)
+ * @ApiResource(
+ * *     attributes={
+ *          "security"="is_granted('ROLE_ADMIN')",
+ *          "pagination_items_per_page"=10,
+ *          "normalization_context"={"groups"={"referentiel_read","user_details_read","referentiel_groupecompetence_read"}}
+ *     },
+ *
+ *     collectionOperations={
+ *          "add_referentiel"={
+ *              "method"="POST",
+ *              "path"="/admin/referentiels",
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas le privilege"
+ *          },
+ *         "get"={
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas acces a cette ressource.",
+ *              "path"="admin/referentiels",
+ *
+ *          },
+ *           "show_groupecompetence"={
+ *              "method"="GET",
+ *              "security"="is_granted('ROLE_CM')",
+ *              "security_message"="Vous n'avez pas acces a cette ressource.",
+ *              "path"="admin/referentiels"
+ *              },
+ *
+ *           "show_referentiel_groupecompetence"={
+ *              "method"="GET",
+ *              "security"="is_granted('ROLE_CM')",
+ *              "security_message"="Vous n'avez pas acces a cette ressource.",
+ *              "path"="admin/referentiels/groupecompetences",
+ *              "normalization_context"={"groups"={"referentiel_groupecompetence_read","user_details_read"}}
+ *              },
+ *     },
+ *
+ *     itemOperations={
+ *         "get"={
+ *              "security"="is_granted('VIEW',object)",
+ *              "security_message"="Vous n'avez pas ce privilege.",
+ *              "path"="admin/referentiels/{id}",
+ *          },
+ *         "delete"={
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas ces privileges.",
+ *              "path"="admin/referentiels/{id}",
+ *          },
+ *         "update_referentiel"={
+ *              "method"="PATCH",
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas ces privileges.",
+ *              "path"="admin/referentiels/{id}",
+ *          },
+ *         "update_referentiel"={
+ *              "method"="PUT",
+ *              "security_post_denormalize"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas ces privileges.",
+ *              "path"="admin/referentiels/{id}",
+ *          },
+ *     },
+ * )
  */
 class Referentiel
 {

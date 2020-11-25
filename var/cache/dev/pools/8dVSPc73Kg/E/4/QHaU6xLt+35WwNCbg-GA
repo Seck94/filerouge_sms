@@ -1,0 +1,57 @@
+<?php //App_Entity_Referentiel
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Referentiel',
+                'id',
+                'groupeCompetences',
+                'Libelle',
+                'Presentation',
+                'Programme',
+                'CritereEvaluation',
+                'CritereAdmission',
+                'libelle',
+                'presentation',
+                'programme',
+                'critereEvaluation',
+                'critereAdmission',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'groupeCompetences' => $o[2],
+                    'Libelle' => $o[3],
+                    'Presentation' => $o[4],
+                    'Programme' => $o[5],
+                    'CritereEvaluation' => $o[6],
+                    'CritereAdmission' => $o[7],
+                    'libelle' => $o[8],
+                    'presentation' => $o[9],
+                    'programme' => $o[10],
+                    'critereEvaluation' => $o[11],
+                    'critereAdmission' => $o[12],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

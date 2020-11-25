@@ -1,0 +1,48 @@
+<?php //App_Entity_Niveau
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Niveau',
+                'id',
+                'Competence',
+                'Descriptif',
+                'GroupeAction',
+                'GroupeEvaluation',
+                'competence',
+                'descriptif',
+                'groupeAction',
+                'groupeEvaluation',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'Competence' => $o[2],
+                    'Descriptif' => $o[3],
+                    'GroupeAction' => $o[4],
+                    'GroupeEvaluation' => $o[5],
+                    'competence' => $o[6],
+                    'descriptif' => $o[7],
+                    'groupeAction' => $o[8],
+                    'groupeEvaluation' => $o[9],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

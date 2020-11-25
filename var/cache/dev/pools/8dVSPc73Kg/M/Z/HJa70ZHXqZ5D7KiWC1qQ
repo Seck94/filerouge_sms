@@ -1,0 +1,51 @@
+<?php //App_Entity_GroupeCompetence
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\GroupeCompetence',
+                'id',
+                'Competence',
+                'Referentiel',
+                'Libelle',
+                'Descriptif',
+                'user',
+                'competence',
+                'referentiel',
+                'libelle',
+                'descriptif',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'Competence' => $o[2],
+                    'Referentiel' => $o[3],
+                    'Libelle' => $o[4],
+                    'Descriptif' => $o[5],
+                    'user' => $o[6],
+                    'competence' => $o[7],
+                    'referentiel' => $o[8],
+                    'libelle' => $o[9],
+                    'descriptif' => $o[10],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

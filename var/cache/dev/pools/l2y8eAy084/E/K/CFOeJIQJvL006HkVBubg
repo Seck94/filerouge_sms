@@ -2,7 +2,8 @@
 
 return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
     $o = [
-        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
     ],
     null,
     [
@@ -10,10 +11,77 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
             'repositoryClass' => [
                 'App\\Repository\\ReferentielRepository',
             ],
+            'collectionOperations' => [
+                1 => [
+                    'add_referentiel' => [
+                        'method' => 'POST',
+                        'path' => '/admin/referentiels',
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas le privilege',
+                    ],
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'admin/referentiels',
+                    ],
+                    'show_groupecompetence' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'admin/referentiels',
+                    ],
+                    'show_referentiel_groupecompetence' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'admin/referentiels/groupecompetences',
+                        'normalization_context' => [
+                            'groups' => [
+                                'referentiel_groupecompetence_read',
+                                'user_details_read',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                1 => [
+                    'get' => [
+                        'security' => 'is_granted(\'VIEW\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'admin/referentiels/{id}',
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => 'admin/referentiels/{id}',
+                    ],
+                    'update_referentiel' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => 'admin/referentiels/{id}',
+                    ],
+                ],
+            ],
+            'attributes' => [
+                1 => [
+                    'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    'pagination_items_per_page' => 10,
+                    'normalization_context' => [
+                        'groups' => [
+                            'referentiel_read',
+                            'user_details_read',
+                            'referentiel_groupecompetence_read',
+                        ],
+                    ],
+                ],
+            ],
         ],
     ],
     [
         $o[0],
+        $o[1],
     ],
     []
 ); }];

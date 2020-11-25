@@ -2,11 +2,32 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\NiveauRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=NiveauRepository::class)
+ * @ApiResource(
+ *        attributes={
+ *          "pagination_items_per_page"=10,
+ *          "normalization_context"={"groups"={"niveau_read","niveau_details_read"}}
+ *      },
+ *     collectionOperations={
+ *          "add_groupecompetence"={
+ *              "method"="POST",
+ *              "path"="admin/groupecompetences",
+ *              "security_post_denormalize"="is_granted('EDIT', object)",
+ *              "security_post_denormalize_message"="Vous n'avez pas ce privilege.",
+ *          },
+ *         "show_groupecompetence"={
+ *              "method"="GET",
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "security_message"="Vous n'avez pas acces a cette ressource.",
+ *              "path"="admin/groupecompetences"
+ *              },
+ *     },
+ * )
  */
 class Niveau
 {
