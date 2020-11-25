@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UserRepository;
 use ApiPlatform\Core\Annotation\ApiFilter;
@@ -123,6 +125,17 @@ class User implements UserInterface
      * @Groups({"user_read"})
      */
     private $Archivage;
+
+    /**
+     * @ORM\OneToMany(targetEntity=GroupeCompetence::class, mappedBy="user")
+     */
+    private $GroupeCompetence;
+
+    public function __construct()
+    {
+        $this->GroupeCompetence = new ArrayCollection();
+    }
+
 
     public function getId(): ?int
     {
@@ -280,4 +293,37 @@ class User implements UserInterface
 
         return $this;
     }
+
+    /**
+     * @return Collection|GroupeCompetence[]
+     */
+    public function getGroupeCompetence(): Collection
+    {
+        return $this->GroupeCompetence;
+    }
+
+    public function addGroupeCompetence(GroupeCompetence $groupeCompetence): self
+    {
+        if (!$this->GroupeCompetence->contains($groupeCompetence)) {
+            $this->GroupeCompetence[] = $groupeCompetence;
+            $groupeCompetence->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeGroupeCompetence(GroupeCompetence $groupeCompetence): self
+    {
+        if ($this->GroupeCompetence->removeElement($groupeCompetence)) {
+            // set the owning side to null (unless already changed)
+            if ($groupeCompetence->getUser() === $this) {
+                $groupeCompetence->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+
+
 }

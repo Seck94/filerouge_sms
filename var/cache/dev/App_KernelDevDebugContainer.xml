@@ -423,11 +423,27 @@
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
+    <service id="App\Repository\CompetenceRepository" class="App\Repository\CompetenceRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="App\Repository\FormateurRepository" class="App\Repository\FormateurRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
+    <service id="App\Repository\GroupeCompetenceRepository" class="App\Repository\GroupeCompetenceRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\NiveauRepository" class="App\Repository\NiveauRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="App\Repository\ProfilRepository" class="App\Repository\ProfilRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\ReferentielRepository" class="App\Repository\ReferentielRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
@@ -3431,7 +3447,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id=".service_locator.FI5PUdu"/>
+      <argument type="service" id=".service_locator.tD1gLCG"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -4794,10 +4810,18 @@
     <service id=".abstract.instanceof.App\Repository\ApprenantRepository" class="App\Repository\ApprenantRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CMRepository" class="App\Repository\CMRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\CMRepository" class="App\Repository\CMRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CompetenceRepository" class="App\Repository\CompetenceRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\CompetenceRepository" class="App\Repository\CompetenceRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\FormateurRepository" class="App\Repository\FormateurRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\FormateurRepository" class="App\Repository\FormateurRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\GroupeCompetenceRepository" class="App\Repository\GroupeCompetenceRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\GroupeCompetenceRepository" class="App\Repository\GroupeCompetenceRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\NiveauRepository" class="App\Repository\NiveauRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\NiveauRepository" class="App\Repository\NiveauRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ProfilRepository" class="App\Repository\ProfilRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\ProfilRepository" class="App\Repository\ProfilRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ReferentielRepository" class="App\Repository\ReferentielRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\ReferentielRepository" class="App\Repository\ReferentielRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Security\Core\Authorization\Voter\VoterInterface.0.App\Security\Voter\ProfilVoter" class="App\Security\Voter\ProfilVoter" autowire="true" abstract="true"/>
@@ -5202,15 +5226,19 @@
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
     </service>
-    <service id=".service_locator.FI5PUdu" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.tD1gLCG" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\ADMINRepository" type="service" id="App\Repository\ADMINRepository"/>
         <argument key="App\Repository\AdminRepository" type="service" id="App\Repository\AdminRepository"/>
         <argument key="App\Repository\ApprenantRepository" type="service" id="App\Repository\ApprenantRepository"/>
         <argument key="App\Repository\CMRepository" type="service" id="App\Repository\CMRepository"/>
+        <argument key="App\Repository\CompetenceRepository" type="service" id="App\Repository\CompetenceRepository"/>
         <argument key="App\Repository\FormateurRepository" type="service" id="App\Repository\FormateurRepository"/>
+        <argument key="App\Repository\GroupeCompetenceRepository" type="service" id="App\Repository\GroupeCompetenceRepository"/>
+        <argument key="App\Repository\NiveauRepository" type="service" id="App\Repository\NiveauRepository"/>
         <argument key="App\Repository\ProfilRepository" type="service" id="App\Repository\ProfilRepository"/>
+        <argument key="App\Repository\ReferentielRepository" type="service" id="App\Repository\ReferentielRepository"/>
         <argument key="App\Repository\UserRepository" type="service" id="App\Repository\UserRepository"/>
       </argument>
     </service>

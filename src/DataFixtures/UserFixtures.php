@@ -3,6 +3,10 @@
 namespace App\DataFixtures;
 
 use App\Entity\CM;
+use App\Entity\Competence;
+use App\Entity\GroupeCompetence;
+use App\Entity\Niveau;
+use App\Entity\Referentiel;
 use Faker\Factory;
 use App\Entity\User;
 use App\Entity\Profil;
@@ -59,14 +63,45 @@ class UserFixtures extends Fixture
             
             $manager->persist($users);
         }
-      
-       
-        
-        
-        
+
         $manager->flush();
 
+        $niveaux = ["Niveau1","Niveau2","Niveau3"];
+        $critereEvaluation = ["CritereEvaluation1","CritereEvaluation2","CritereEvaluation3"];
+        $competences = ["Bon en PHP","excellent niveau en Bootsrap","excellent niveau en Bootsrap","bon niveux en Ajax"];
 
+        $referentiel = new Referentiel();
+        $referentiel -> setLibelle("DEV BACK");
+        $referentiel -> setPresentation("Programme mobile");
+        $referentiel -> setProgramme("Critère d'admission de groupe competence");
+        $referentiel -> setCritereAdmission("Critère d'admission competence");
+        $referentiel -> setCritereEvaluation("dev mobile");
+
+        $grpCompetence = new Groupecompetence();
+        $grpCompetence -> setLibelle("Developper le backend d'une application");
+        $grpCompetence -> setDescriptif("Developper le backend d'une application web");
+        $grpCompetence -> addReferentiel($referentiel);
+
+        for ($i=0; $i < 3; $i++) {
+            $competence = new Competence();
+            $competence -> setLibelle($competences[$i]);
+            $competence -> setDescriptif($competences[$i]);
+            for ($j=0; $j < 3; $j++) {
+                $niveau = new Niveau();
+                $niveau -> setDescriptif($niveaux[$j]);
+                $niveau -> setGroupeEvaluation($critereEvaluation[$i]);
+                $niveau -> setGroupeAction("Action A, Action B, Action C");
+                $competence -> addNiveau($niveau);
+                $manager->persist($niveau);
+                $manager->persist($competence);
+                $manager->flush();
+            }
+            $grpCompetence -> addCompetence($competence);
+        }
+        $grpCompetence -> setUser($users);
+        $manager->persist($referentiel);
+        $manager->persist($grpCompetence);
+        $manager->flush();
     }
    
 }
