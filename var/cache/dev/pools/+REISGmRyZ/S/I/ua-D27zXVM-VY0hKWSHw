@@ -1,3 +1,0 @@
-<?php //route_name_fc17bd6f41b1c51680e662d3768d095d
-
-return [PHP_INT_MAX, 'api_groupe_competences_competences_get_subresource'];

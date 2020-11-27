@@ -44,6 +44,23 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                     'descriptif' => $o[10],
                 ],
             ],
+            'groups' => [
+                1 => [
+                    'Grpcompetence_read',
+                ],
+                [
+                    'Grpcompetence_read',
+                ],
+                4 => [
+                    'Grpcompetence_read',
+                ],
+                [
+                    'Grpcompetence_read',
+                ],
+                [
+                    'Grpcompetence_read',
+                ],
+            ],
         ],
     ],
     $o[0],

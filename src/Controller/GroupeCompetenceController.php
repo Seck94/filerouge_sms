@@ -7,7 +7,7 @@ use App\Entity\GroupeCompetence;
 use App\Repository\CompetenceRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
-use App\Repository\GroupecompetenceRepository;
+use App\Repository\GroupeCompetenceRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -25,7 +25,7 @@ class GroupeCompetenceController extends AbstractController
      *     methods={"POST"},
      *     defaults={
      *          "__controller"="App\Controller\GroupecompetenceController::addGroupecompetence",
-     *          "__api_resource_class"=Groupecompetence::class,
+     *          "__api_resource_class"=GroupeCompetence::class,
      *          "__api_collection_operation_name"="add_groupecompetence"
      *     }
      * )
@@ -75,7 +75,7 @@ class GroupeCompetenceController extends AbstractController
      *     }
      * )
      */
-    public function updateGroupecompetence(Request $request,SerializerInterface $serializer,ValidatorInterface $validator,EntityManagerInterface $manager, $id, CompetenceRepository $cmp, GroupecompetenceRepository $grpcmp)
+    public function updateGroupecompetence(Request $request,SerializerInterface $serializer,ValidatorInterface $validator,EntityManagerInterface $manager, $id, CompetenceRepository $cmp, GroupeCompetenceRepository $grpcmp)
     {
         $Groupecompetence_json = $request -> getContent();
         $Groupecompetence_tab = $serializer -> decode($Groupecompetence_json,"json");
@@ -144,7 +144,7 @@ class GroupeCompetenceController extends AbstractController
      *     }
      * )
      */
-    public function showGroupecompetence(GroupecompetenceRepository $Groupecompetence){
+    public function showGroupecompetence(GroupeCompetenceRepository $Groupecompetence){
         if (!$this -> isGranted("ROLE_CM",$Groupecompetence)) {
             return $this -> json(["message" => "l'accès à cette ressource est interdite"],Response::HTTP_FORBIDDEN);
         }

@@ -50,6 +50,6 @@ class CMController extends AbstractController
         $user = $update->EditUser($request,"CM", $user[0],$id);
 
         $manager->flush();
-        return $this->json("Vous venez de faire une modification pour le cm", Response::HTTP_CREATED);
+        return $this->json("Vous venez de faire une modification pour le cm", Response::HTTP_OK);
     }
 }

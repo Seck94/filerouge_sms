@@ -10,6 +10,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Serializer\Annotation\Groups;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ProfilRepository::class)
@@ -70,6 +71,7 @@ class Profil
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"profil_details_read"})
+     * @Assert\NotBlank(message="Le libelle ne peut pas etre nul !!!")
      */
     private $Libelle;
 

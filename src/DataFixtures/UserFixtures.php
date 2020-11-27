@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\ADMIN;
 use App\Entity\CM;
 use App\Entity\Competence;
 use App\Entity\GroupeCompetence;
@@ -35,19 +36,23 @@ class UserFixtures extends Fixture
             if($j==0){
                 $users= new Formateur();
                 $profil->setLibelle("FORMATEUR");
+                $users->setUsername("formateur");
 
             }
             elseif($j==1){
                 $users= new CM();
                 $profil->setLibelle("CM");
+                $users->setUsername("cm");
             }
             elseif($j==2){
                 $users= new Apprenant();
                 $profil->setLibelle("APPRENANT");
+                $users->setUsername("apprenant");
             }
             else{
-                $users= new User();
+                $users= new ADMIN();
                 $profil->setLibelle("ADMIN");
+                $users->setUsername("admin");
             }
 
 
@@ -57,7 +62,7 @@ class UserFixtures extends Fixture
             $users->setProfil($profil);
             $users->setStatut("actif");
             $users->setAvatar($faker->imageUrl());
-            $users->setUsername(strtolower($faker->name()));
+
             $password = $this->encoder->encodePassword($users, "passe");
             $users->setPassword($password);
             

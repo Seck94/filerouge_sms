@@ -12,6 +12,7 @@ use Doctrine\ORM\Mapping\DiscriminatorColumn;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Security\Core\User\UserInterface;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
@@ -71,41 +72,46 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      * @Groups({"user_read","profil_read","formateur_read"})
+     * @Assert\NotBlank(message="Le username ne peut pas etre nul !!!")
      */
     protected $username;
 
-    /**
-     * @ORM\Column(type="json")
-     */
+
     protected $roles = [];
 
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
+     * @Assert\NotBlank(message="Le mot de passe ne peut pas etre nul !!!")
      */
     protected $password;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"user_read","profil_read","formateur_read"})
+     * @Assert\NotBlank(message="Le Nom ne peut pas etre nul !!!")
+     *
      */
     protected $Nom;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"user_read","profil_read","formateur_read"})
+     * @Assert\NotBlank(message="Le Prenom ne peut pas etre nul !!!")
      */
     protected $Prenom;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"user_read","profil_read","formateur_read"})
+     * @Assert\NotBlank(message="l'Email ne peut pas etre nul !!!")
      */
     protected $Email;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"user_read" ,"profil_read","formateur_read"})
+     * @Assert\NotBlank(message="Le Statut ne peut pas etre nul !!!")
      */
     protected $Statut;
 

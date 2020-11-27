@@ -21,6 +21,8 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
         clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
         clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
         clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
     ],
     null,
     [
@@ -38,6 +40,7 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 'Avatar',
                 'profil',
                 'Archivage',
+                'GroupeCompetence',
                 'salt',
                 'nom',
                 'prenom',
@@ -45,6 +48,7 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 'statut',
                 'avatar',
                 'archivage',
+                'groupeCompetence',
             ],
             'attributesMetadata' => [
                 [
@@ -59,13 +63,15 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                     'Avatar' => $o[9],
                     'profil' => $o[10],
                     'Archivage' => $o[11],
-                    'salt' => $o[12],
-                    'nom' => $o[13],
-                    'prenom' => $o[14],
-                    'email' => $o[15],
-                    'statut' => $o[16],
-                    'avatar' => $o[17],
-                    'archivage' => $o[18],
+                    'GroupeCompetence' => $o[12],
+                    'salt' => $o[13],
+                    'nom' => $o[14],
+                    'prenom' => $o[15],
+                    'email' => $o[16],
+                    'statut' => $o[17],
+                    'avatar' => $o[18],
+                    'archivage' => $o[19],
+                    'groupeCompetence' => $o[20],
                 ],
             ],
             'groups' => [
@@ -102,6 +108,9 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                     'user_read',
                     'profil_read',
                     'formateur_read',
+                ],
+                [
+                    'user_read',
                 ],
                 [
                     'user_read',
