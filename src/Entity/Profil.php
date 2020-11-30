@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiSubresource;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\ProfilRepository;
 use ApiPlatform\Core\Annotation\ApiFilter;
@@ -33,6 +34,13 @@ use Symfony\Component\Validator\Constraints as Assert;
  *     },
  *     
  *     itemOperations={
+ *       "api_questions_answer_get_subresource"={
+ *              "security"="is_granted('ROLE_ADMIN')",
+ *              "method"="GET",
+ *              "path"="admin/profils/{id}/users",
+ *
+ *
+ *     },
  *         "get"={
  *              "security"="is_granted('VIEW',object)", 
  *              "security_message"="Vous n'avez pas ce privilege.",
@@ -77,8 +85,8 @@ class Profil
 
     /**
      * @ORM\OneToMany(targetEntity=User::class, mappedBy="profil")
-     * 
-     * 
+     * @ApiSubresource
+     * @Groups({"profil_read"})
      */
     private $users;
 

@@ -6,8 +6,10 @@ use App\Entity\ADMIN;
 use App\Entity\CM;
 use App\Entity\Competence;
 use App\Entity\GroupeCompetence;
+use App\Entity\GroupeTag;
 use App\Entity\Niveau;
 use App\Entity\Referentiel;
+use App\Entity\Tag;
 use Faker\Factory;
 use App\Entity\User;
 use App\Entity\Profil;
@@ -107,6 +109,21 @@ class UserFixtures extends Fixture
         $manager->persist($referentiel);
         $manager->persist($grpCompetence);
         $manager->flush();
+
+        $groupeTags = new Groupetag();
+        $groupeTags -> setlibelle("FrontEnd");
+        $manager->persist($groupeTags);
+        $manager->flush();
+
+        $tags = ["PHP", "JavaScript","Ajax","Json"];
+        for ($i=0; $i < 4; $i++) {
+            $tag = new Tag();
+            $tag -> setlibelle($tags[$i]);
+            $tag -> setdescription("Descriptif de ce tag");
+            $tag -> addGroupetag($groupeTags);
+            $manager->persist($tag);
+            $manager->flush();
+        }
     }
    
 }

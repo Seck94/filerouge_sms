@@ -1,0 +1,61 @@
+<?php //subresource_operations_b3081c6648177723104daaef7abd4b1e
+
+return [PHP_INT_MAX, [
+    'api_tags_groupetags_get_subresource' => [
+        'property' => 'groupetag',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\GroupeTag',
+        'shortNames' => [
+            'GroupeTag',
+            'Tag',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\Tag',
+                true,
+            ],
+        ],
+        'operation_name' => 'groupetags_get_subresource',
+        'route_name' => 'api_tags_groupetags_get_subresource',
+        'path' => '/tags/{id}/groupetags.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+    'api_tags_groupetags_tags_get_subresource' => [
+        'property' => 'tags',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\Tag',
+        'shortNames' => [
+            'Tag',
+            'GroupeTag',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\Tag',
+                true,
+            ],
+            [
+                'groupetag',
+                'App\\Entity\\GroupeTag',
+                true,
+            ],
+        ],
+        'operation_name' => 'groupetags_tags_get_subresource',
+        'route_name' => 'api_tags_groupetags_tags_get_subresource',
+        'path' => '/tags/{id}/groupetags/{groupetag}/tags.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+]];
