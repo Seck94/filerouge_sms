@@ -39,12 +39,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
  *     },
  *
  *     itemOperations={
- *         "get"={
- *              "security"="is_granted('ROLE_ADMIN')",
- *              "security_message"="Vous n'avez pas ces privileges.",
- *              "path"="admin/apprenants/{id}",
- *              "defaults"={"id"=null}
- *          },
+ *
  *          "get_apprenant"={
  *              "method"="GET",
  *              "path"="/apprenants/{id}",

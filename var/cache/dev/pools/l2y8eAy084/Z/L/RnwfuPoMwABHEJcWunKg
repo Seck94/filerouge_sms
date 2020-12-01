@@ -4,7 +4,6 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
     $o = [
         clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
         clone ($p['ApiPlatform\\Core\\Annotation\\ApiSubresource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiSubresource')),
-        clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
     ],
     null,
     [
@@ -16,18 +15,10 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 'tags',
             ],
         ],
-        'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
-            'groups' => [
-                2 => [
-                    'tag_read',
-                ],
-            ],
-        ],
     ],
     [
         $o[0],
         $o[1],
-        $o[2],
     ],
     []
 ); }];

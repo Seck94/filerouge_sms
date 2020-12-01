@@ -80,33 +80,36 @@ return [
                             .'|ompetences/([^/]++)(*:122)'
                         .')'
                         .'|formateurs/([^/]++)(*:150)'
-                        .'|groupecompetences/([^/]++)(*:184)'
-                        .'|referentiels/([^/]++)(*:213)'
+                        .'|groupe(?'
+                            .'|competences/([^/]++)(*:187)'
+                            .'|tags/([^/]++)(*:208)'
+                        .')'
+                        .'|referentiels/([^/]++)(*:238)'
                     .')'
-                    .'|(?:/(index)(?:\\.([^/]++))?)?(*:250)'
+                    .'|(?:/(index)(?:\\.([^/]++))?)?(*:275)'
                     .'|/(?'
-                        .'|docs(?:\\.([^/]++))?(*:281)'
+                        .'|docs(?:\\.([^/]++))?(*:306)'
                         .'|c(?'
                             .'|o(?'
-                                .'|ntexts/(.+)(?:\\.([^/]++))?(*:323)'
+                                .'|ntexts/(.+)(?:\\.([^/]++))?(*:348)'
                                 .'|mpetences/([^/]++)/groupe_competences(?'
-                                    .'|(?:\\.([^/]++))?(*:386)'
-                                    .'|/([^/]++)/competences(?:\\.([^/]++))?(*:430)'
+                                    .'|(?:\\.([^/]++))?(*:411)'
+                                    .'|/([^/]++)/competences(?:\\.([^/]++))?(*:455)'
                                 .')'
                             .')'
-                            .'|ms/(\\d+)(*:448)'
+                            .'|ms/(\\d+)(*:473)'
                         .')'
                         .'|groupe_(?'
                             .'|tags(?'
-                                .'|(?:\\.([^/]++))?(*:489)'
+                                .'|(?:\\.([^/]++))?(*:514)'
                                 .'|/([^/]++)/tags(?'
-                                    .'|(?:\\.([^/]++))?(*:529)'
-                                    .'|/([^/]++)/groupetags(?:\\.([^/]++))?(*:572)'
+                                    .'|(?:\\.([^/]++))?(*:554)'
+                                    .'|/([^/]++)/groupetags(?:\\.([^/]++))?(*:597)'
                                 .')'
                             .')'
                             .'|competences/([^/]++)/competences(?'
-                                .'|(?:\\.([^/]++))?(*:632)'
-                                .'|/([^/]++)/groupe_competences(?:\\.([^/]++))?(*:683)'
+                                .'|(?:\\.([^/]++))?(*:657)'
+                                .'|/([^/]++)/groupe_competences(?:\\.([^/]++))?(*:708)'
                             .')'
                         .')'
                         .'|a(?'
@@ -114,82 +117,79 @@ return [
                                 .'|/(?'
                                     .'|groupe(?'
                                         .'|tags/([^/]++)(?'
-                                            .'|/tags(*:738)'
-                                            .'|(*:746)'
+                                            .'|/tags(*:763)'
+                                            .'|(*:771)'
                                         .')'
                                         .'|competences/([^/]++)(?'
-                                            .'|(*:778)'
+                                            .'|(*:803)'
                                         .')'
                                     .')'
                                     .'|users(?'
-                                        .'|(?:/([^/]++))?(*:810)'
-                                        .'|/([^/]++)(*:827)'
+                                        .'|(?:/([^/]++))?(*:835)'
+                                        .'|/([^/]++)(*:852)'
                                     .')'
                                     .'|c(?'
                                         .'|ompetences/([^/]++)(?'
-                                            .'|(*:862)'
+                                            .'|(*:887)'
                                         .')'
                                         .'|ms(?'
-                                            .'|(?:/([^/]++))?(*:890)'
+                                            .'|(?:/([^/]++))?(*:915)'
                                             .'|/([^/]++)(?'
-                                                .'|(*:910)'
+                                                .'|(*:935)'
                                             .')'
                                         .')'
                                     .')'
                                     .'|a(?'
-                                        .'|pprenants(?'
-                                            .'|(?:/([^/]++))?(*:951)'
-                                            .'|/([^/]++)(?'
-                                                .'|(*:971)'
-                                            .')'
+                                        .'|pprenants/([^/]++)(?'
+                                            .'|(*:971)'
                                         .')'
                                         .'|dmins(?'
-                                            .'|(?:/([^/]++))?(*:1003)'
+                                            .'|(?:/([^/]++))?(*:1002)'
                                             .'|/([^/]++)(?'
-                                                .'|(*:1024)'
+                                                .'|(*:1023)'
                                             .')'
                                         .')'
                                     .')'
                                     .'|profils/([^/]++)(?'
-                                        .'|/users(*:1061)'
-                                        .'|(*:1070)'
+                                        .'|/users(*:1060)'
+                                        .'|(*:1069)'
                                     .')'
                                     .'|referentiels/(?'
-                                        .'|groupecompetences(*:1113)'
+                                        .'|groupecompetences(*:1112)'
                                         .'|([^/]++)(?'
-                                            .'|(*:1133)'
+                                            .'|(*:1132)'
                                         .')'
                                     .')'
                                     .'|tags/([^/]++)(?'
-                                        .'|(*:1160)'
+                                        .'|(*:1159)'
                                     .')'
                                     .'|formateurs(?'
-                                        .'|(?:/([^/]++))?(*:1197)'
+                                        .'|(?:/([^/]++))?(*:1196)'
                                         .'|/([^/]++)(?'
-                                            .'|(*:1218)'
+                                            .'|(*:1217)'
                                         .')'
                                     .')'
                                 .')'
-                                .'|s/(\\d+)(*:1237)'
+                                .'|s/(\\d+)(*:1236)'
                             .')'
-                            .'|pprenants/(\\d+)(*:1262)'
+                            .'|pprenants/(\\d+)(*:1261)'
                         .')'
                         .'|niveaux/([^/\\.]++)(?:\\.([^/]++))?(?'
-                            .'|(*:1308)'
+                            .'|(*:1307)'
                         .')'
-                        .'|profils/([^/]++)/users(?:\\.([^/]++))?(*:1355)'
+                        .'|profils/([^/]++)/users(?:\\.([^/]++))?(*:1354)'
                         .'|referentiels/([^/]++)/groupe_competences(?'
-                            .'|(?:\\.([^/]++))?(*:1422)'
+                            .'|(?:\\.([^/]++))?(*:1421)'
                             .'|/([^/]++)/competences(?'
-                                .'|(?:\\.([^/]++))?(*:1470)'
-                                .'|/([^/]++)/groupe_competences(?:\\.([^/]++))?(*:1522)'
+                                .'|(?:\\.([^/]++))?(*:1469)'
+                                .'|/([^/]++)/groupe_competences(?:\\.([^/]++))?(*:1521)'
                             .')'
                         .')'
                         .'|tags/([^/]++)/groupetags(?'
-                            .'|(?:\\.([^/]++))?(*:1575)'
-                            .'|/([^/]++)/tags(?:\\.([^/]++))?(*:1613)'
+                            .'|(?:\\.([^/]++))?(*:1574)'
+                            .'|/([^/]++)/tags(?:\\.([^/]++))?(*:1612)'
                         .')'
-                        .'|formateurs/(\\d+)(*:1639)'
+                        .'|formateurs/(\\d+)(*:1638)'
                     .')'
                 .')'
             .')/?$}sDu',
@@ -200,96 +200,96 @@ return [
         96 => [[['_route' => 'app_cm_updatecm', '__controller' => 'App\\Controller\\CMController::updateCm', '__api_resource_class' => 'App\\Entity\\CM', '__api_collection_operation_name' => 'edit_cm', '_controller' => 'App\\Controller\\CMController::updateCm'], ['id'], ['PUT' => 0], null, false, true, null]],
         122 => [[['_route' => 'app_competence_updatecompetence', '__controller' => 'App\\Controller\\CompetenceController::updateCompetence', '__api_resource_class' => 'App\\Entity\\Competence', '__api_collection_operation_name' => 'update_competence', '_controller' => 'App\\Controller\\CompetenceController::updateCompetence'], ['id'], ['PUT' => 0, 'PATCH' => 1], null, false, true, null]],
         150 => [[['_route' => 'app_formateur_updateformateur', '__controller' => 'App\\Controller\\FormateurController::updateFormateur', '__api_resource_class' => 'App\\Entity\\Formateur', '__api_collection_operation_name' => 'edit_formateur', '_controller' => 'App\\Controller\\FormateurController::updateFormateur'], ['id'], ['PUT' => 0], null, false, true, null]],
-        184 => [[['_route' => 'app_groupecompetence_updategroupecompetence', '__controller' => 'App\\Controller\\GroupecompetenceController::updateGroupecompetence', '__api_resource_class' => 'App\\Entity\\GroupeCompetence', '__api_collection_operation_name' => 'update_groupecompetence', '_controller' => 'App\\Controller\\GroupeCompetenceController::updateGroupecompetence'], ['id'], ['PUT' => 0, 'PATCH' => 1], null, false, true, null]],
-        213 => [[['_route' => 'app_referentiel_updatereferentiel', '__controller' => 'App\\Controller\\ReferentielController::updateReferentiel', '__api_resource_class' => 'App\\Entity\\Referentiel', '__api_collection_operation_name' => 'update_referentiel', '_controller' => 'App\\Controller\\ReferentielController::updateReferentiel'], ['id'], ['PUT' => 0, 'PATCH' => 1], null, false, true, null]],
-        250 => [[['_route' => 'api_entrypoint', '_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index', '_format'], null, null, false, true, null]],
-        281 => [[['_route' => 'api_doc', '_controller' => 'api_platform.action.documentation', '_format' => '', '_api_respond' => 'true'], ['_format'], null, null, false, true, null]],
-        323 => [[['_route' => 'api_jsonld_context', '_controller' => 'api_platform.jsonld.action.context', '_format' => 'jsonld', '_api_respond' => 'true'], ['shortName', '_format'], null, null, false, true, null]],
-        386 => [[['_route' => 'api_competences_groupe_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_subresource_operation_name' => 'api_competences_groupe_competences_get_subresource', '_api_subresource_context' => ['property' => 'groupeCompetences', 'identifiers' => [['id', 'App\\Entity\\Competence', true]], 'collection' => true, 'operationId' => 'api_competences_groupe_competences_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
-        430 => [[['_route' => 'api_competences_groupe_competences_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Competence', '_api_subresource_operation_name' => 'api_competences_groupe_competences_competences_get_subresource', '_api_subresource_context' => ['property' => 'Competence', 'identifiers' => [['id', 'App\\Entity\\Competence', true], ['groupeCompetences', 'App\\Entity\\GroupeCompetence', true]], 'collection' => true, 'operationId' => 'api_competences_groupe_competences_competences_get_subresource']], ['id', 'groupeCompetences', '_format'], ['GET' => 0], null, false, true, null]],
-        448 => [[['_route' => 'api_c_ms_get_formateur_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\CM', '_api_item_operation_name' => 'get_formateur'], ['id'], ['GET' => 0], null, false, true, null]],
-        489 => [[['_route' => 'api_groupe_tags_post_collection', '_controller' => 'api_platform.action.post_collection', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_collection_operation_name' => 'post'], ['_format'], ['POST' => 0], null, false, true, null]],
-        529 => [[['_route' => 'api_groupe_tags_tags_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Tag', '_api_subresource_operation_name' => 'api_groupe_tags_tags_get_subresource', '_api_subresource_context' => ['property' => 'tags', 'identifiers' => [['id', 'App\\Entity\\GroupeTag', true]], 'collection' => true, 'operationId' => 'api_groupe_tags_tags_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
-        572 => [[['_route' => 'api_groupe_tags_tags_groupetags_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_subresource_operation_name' => 'api_groupe_tags_tags_groupetags_get_subresource', '_api_subresource_context' => ['property' => 'groupetag', 'identifiers' => [['id', 'App\\Entity\\GroupeTag', true], ['tags', 'App\\Entity\\Tag', true]], 'collection' => true, 'operationId' => 'api_groupe_tags_tags_groupetags_get_subresource']], ['id', 'tags', '_format'], ['GET' => 0], null, false, true, null]],
-        632 => [[['_route' => 'api_groupe_competences_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Competence', '_api_subresource_operation_name' => 'api_groupe_competences_competences_get_subresource', '_api_subresource_context' => ['property' => 'Competence', 'identifiers' => [['id', 'App\\Entity\\GroupeCompetence', true]], 'collection' => true, 'operationId' => 'api_groupe_competences_competences_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
-        683 => [[['_route' => 'api_groupe_competences_competences_groupe_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_subresource_operation_name' => 'api_groupe_competences_competences_groupe_competences_get_subresource', '_api_subresource_context' => ['property' => 'groupeCompetences', 'identifiers' => [['id', 'App\\Entity\\GroupeCompetence', true], ['Competence', 'App\\Entity\\Competence', true]], 'collection' => true, 'operationId' => 'api_groupe_competences_competences_groupe_competences_get_subresource']], ['id', 'Competence', '_format'], ['GET' => 0], null, false, true, null]],
-        738 => [[['_route' => 'api_groupe_tags_api_questions_answer_get_subresource_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_item_operation_name' => 'api_questions_answer_get_subresource'], ['id'], ['GET' => 0], null, false, false, null]],
-        746 => [
+        187 => [[['_route' => 'app_groupecompetence_updategroupecompetence', '__controller' => 'App\\Controller\\GroupecompetenceController::updateGroupecompetence', '__api_resource_class' => 'App\\Entity\\GroupeCompetence', '__api_collection_operation_name' => 'update_groupecompetence', '_controller' => 'App\\Controller\\GroupeCompetenceController::updateGroupecompetence'], ['id'], ['PUT' => 0, 'PATCH' => 1], null, false, true, null]],
+        208 => [[['_route' => 'app_groupetag_updategroupetag', '__controller' => 'App\\Controller\\GroupetagController::updateGroupetag', '__api_resource_class' => 'App\\Entity\\GroupeTag', '__api_collection_operation_name' => 'update_groupetag', '_controller' => 'App\\Controller\\GroupetagController::updateGroupetag'], ['id'], ['PUT' => 0], null, false, true, null]],
+        238 => [[['_route' => 'app_referentiel_updatereferentiel', '__controller' => 'App\\Controller\\ReferentielController::updateReferentiel', '__api_resource_class' => 'App\\Entity\\Referentiel', '__api_collection_operation_name' => 'update_referentiel', '_controller' => 'App\\Controller\\ReferentielController::updateReferentiel'], ['id'], ['PUT' => 0, 'PATCH' => 1], null, false, true, null]],
+        275 => [[['_route' => 'api_entrypoint', '_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index', '_format'], null, null, false, true, null]],
+        306 => [[['_route' => 'api_doc', '_controller' => 'api_platform.action.documentation', '_format' => '', '_api_respond' => 'true'], ['_format'], null, null, false, true, null]],
+        348 => [[['_route' => 'api_jsonld_context', '_controller' => 'api_platform.jsonld.action.context', '_format' => 'jsonld', '_api_respond' => 'true'], ['shortName', '_format'], null, null, false, true, null]],
+        411 => [[['_route' => 'api_competences_groupe_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_subresource_operation_name' => 'api_competences_groupe_competences_get_subresource', '_api_subresource_context' => ['property' => 'groupeCompetences', 'identifiers' => [['id', 'App\\Entity\\Competence', true]], 'collection' => true, 'operationId' => 'api_competences_groupe_competences_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
+        455 => [[['_route' => 'api_competences_groupe_competences_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Competence', '_api_subresource_operation_name' => 'api_competences_groupe_competences_competences_get_subresource', '_api_subresource_context' => ['property' => 'Competence', 'identifiers' => [['id', 'App\\Entity\\Competence', true], ['groupeCompetences', 'App\\Entity\\GroupeCompetence', true]], 'collection' => true, 'operationId' => 'api_competences_groupe_competences_competences_get_subresource']], ['id', 'groupeCompetences', '_format'], ['GET' => 0], null, false, true, null]],
+        473 => [[['_route' => 'api_c_ms_get_formateur_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\CM', '_api_item_operation_name' => 'get_formateur'], ['id'], ['GET' => 0], null, false, true, null]],
+        514 => [[['_route' => 'api_groupe_tags_post_collection', '_controller' => 'api_platform.action.post_collection', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_collection_operation_name' => 'post'], ['_format'], ['POST' => 0], null, false, true, null]],
+        554 => [[['_route' => 'api_groupe_tags_tags_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Tag', '_api_subresource_operation_name' => 'api_groupe_tags_tags_get_subresource', '_api_subresource_context' => ['property' => 'tags', 'identifiers' => [['id', 'App\\Entity\\GroupeTag', true]], 'collection' => true, 'operationId' => 'api_groupe_tags_tags_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
+        597 => [[['_route' => 'api_groupe_tags_tags_groupetags_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_subresource_operation_name' => 'api_groupe_tags_tags_groupetags_get_subresource', '_api_subresource_context' => ['property' => 'groupetag', 'identifiers' => [['id', 'App\\Entity\\GroupeTag', true], ['tags', 'App\\Entity\\Tag', true]], 'collection' => true, 'operationId' => 'api_groupe_tags_tags_groupetags_get_subresource']], ['id', 'tags', '_format'], ['GET' => 0], null, false, true, null]],
+        657 => [[['_route' => 'api_groupe_competences_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Competence', '_api_subresource_operation_name' => 'api_groupe_competences_competences_get_subresource', '_api_subresource_context' => ['property' => 'Competence', 'identifiers' => [['id', 'App\\Entity\\GroupeCompetence', true]], 'collection' => true, 'operationId' => 'api_groupe_competences_competences_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
+        708 => [[['_route' => 'api_groupe_competences_competences_groupe_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_subresource_operation_name' => 'api_groupe_competences_competences_groupe_competences_get_subresource', '_api_subresource_context' => ['property' => 'groupeCompetences', 'identifiers' => [['id', 'App\\Entity\\GroupeCompetence', true], ['Competence', 'App\\Entity\\Competence', true]], 'collection' => true, 'operationId' => 'api_groupe_competences_competences_groupe_competences_get_subresource']], ['id', 'Competence', '_format'], ['GET' => 0], null, false, true, null]],
+        763 => [[['_route' => 'api_groupe_tags_api_questions_answer_get_subresource_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_item_operation_name' => 'api_questions_answer_get_subresource'], ['id'], ['GET' => 0], null, false, false, null]],
+        771 => [
             [['_route' => 'api_groupe_tags_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_item_operation_name' => 'get'], ['id'], ['GET' => 0], null, false, true, null],
             [['_route' => 'api_groupe_tags_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_groupe_tags_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_item_operation_name' => 'patch'], ['id'], ['PATCH' => 0], null, false, true, null],
             [['_route' => 'api_groupe_tags_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_item_operation_name' => 'put'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        778 => [
+        803 => [
             [['_route' => 'api_groupe_competences_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_item_operation_name' => 'get'], ['id'], ['GET' => 0], null, false, true, null],
             [['_route' => 'api_groupe_competences_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_groupe_competences_update_groupecompetence_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_item_operation_name' => 'update_groupecompetence'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        810 => [[['_route' => 'api_users_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\User', '_api_item_operation_name' => 'get', 'id' => null], ['id'], ['GET' => 0], null, false, true, null]],
-        827 => [[['_route' => 'api_users_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\User', '_api_item_operation_name' => 'put'], ['id'], ['PUT' => 0], null, false, true, null]],
-        862 => [
+        835 => [[['_route' => 'api_users_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\User', '_api_item_operation_name' => 'get', 'id' => null], ['id'], ['GET' => 0], null, false, true, null]],
+        852 => [[['_route' => 'api_users_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\User', '_api_item_operation_name' => 'put'], ['id'], ['PUT' => 0], null, false, true, null]],
+        887 => [
             [['_route' => 'api_competences_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Competence', '_api_item_operation_name' => 'get'], ['id'], ['GET' => 0], null, false, true, null],
             [['_route' => 'api_competences_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Competence', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_competences_update_competence_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Competence', '_api_item_operation_name' => 'update_competence'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        890 => [[['_route' => 'api_c_ms_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\CM', '_api_item_operation_name' => 'get', 'id' => null], ['id'], ['GET' => 0], null, false, true, null]],
-        910 => [
+        915 => [[['_route' => 'api_c_ms_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\CM', '_api_item_operation_name' => 'get', 'id' => null], ['id'], ['GET' => 0], null, false, true, null]],
+        935 => [
             [['_route' => 'api_c_ms_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\CM', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_c_ms_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\CM', '_api_item_operation_name' => 'patch'], ['id'], ['PATCH' => 0], null, false, true, null],
             [['_route' => 'api_c_ms_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\CM', '_api_item_operation_name' => 'put'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        951 => [[['_route' => 'api_apprenants_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Apprenant', '_api_item_operation_name' => 'get', 'id' => null], ['id'], ['GET' => 0], null, false, true, null]],
         971 => [
             [['_route' => 'api_apprenants_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Apprenant', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_apprenants_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Apprenant', '_api_item_operation_name' => 'patch'], ['id'], ['PATCH' => 0], null, false, true, null],
             [['_route' => 'api_apprenants_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Apprenant', '_api_item_operation_name' => 'put'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        1003 => [[['_route' => 'api_a_d_m_i_ns_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\ADMIN', '_api_item_operation_name' => 'get', 'id' => null], ['id'], ['GET' => 0], null, false, true, null]],
-        1024 => [
+        1002 => [[['_route' => 'api_a_d_m_i_ns_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\ADMIN', '_api_item_operation_name' => 'get', 'id' => null], ['id'], ['GET' => 0], null, false, true, null]],
+        1023 => [
             [['_route' => 'api_a_d_m_i_ns_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\ADMIN', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_a_d_m_i_ns_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\ADMIN', '_api_item_operation_name' => 'patch'], ['id'], ['PATCH' => 0], null, false, true, null],
             [['_route' => 'api_a_d_m_i_ns_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\ADMIN', '_api_item_operation_name' => 'put'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        1061 => [[['_route' => 'api_profils_api_questions_answer_get_subresource_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Profil', '_api_item_operation_name' => 'api_questions_answer_get_subresource'], ['id'], ['GET' => 0], null, false, false, null]],
-        1070 => [
+        1060 => [[['_route' => 'api_profils_api_questions_answer_get_subresource_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Profil', '_api_item_operation_name' => 'api_questions_answer_get_subresource'], ['id'], ['GET' => 0], null, false, false, null]],
+        1069 => [
             [['_route' => 'api_profils_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Profil', '_api_item_operation_name' => 'get'], ['id'], ['GET' => 0], null, false, true, null],
             [['_route' => 'api_profils_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Profil', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_profils_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Profil', '_api_item_operation_name' => 'patch'], ['id'], ['PATCH' => 0], null, false, true, null],
             [['_route' => 'api_profils_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Profil', '_api_item_operation_name' => 'put'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        1113 => [[['_route' => 'api_referentiels_show_referentiel_groupecompetence_collection', '_controller' => 'api_platform.action.get_collection', '_format' => null, '_api_resource_class' => 'App\\Entity\\Referentiel', '_api_collection_operation_name' => 'show_referentiel_groupecompetence'], [], ['GET' => 0], null, false, false, null]],
-        1133 => [
+        1112 => [[['_route' => 'api_referentiels_show_referentiel_groupecompetence_collection', '_controller' => 'api_platform.action.get_collection', '_format' => null, '_api_resource_class' => 'App\\Entity\\Referentiel', '_api_collection_operation_name' => 'show_referentiel_groupecompetence'], [], ['GET' => 0], null, false, false, null]],
+        1132 => [
             [['_route' => 'api_referentiels_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Referentiel', '_api_item_operation_name' => 'get'], ['id'], ['GET' => 0], null, false, true, null],
             [['_route' => 'api_referentiels_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Referentiel', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_referentiels_update_referentiel_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Referentiel', '_api_item_operation_name' => 'update_referentiel'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        1160 => [
+        1159 => [
             [['_route' => 'api_tags_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Tag', '_api_item_operation_name' => 'get'], ['id'], ['GET' => 0], null, false, true, null],
             [['_route' => 'api_tags_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Tag', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_tags_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Tag', '_api_item_operation_name' => 'patch'], ['id'], ['PATCH' => 0], null, false, true, null],
             [['_route' => 'api_tags_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Tag', '_api_item_operation_name' => 'put'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        1197 => [[['_route' => 'api_formateurs_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Formateur', '_api_item_operation_name' => 'get', 'id' => null], ['id'], ['GET' => 0], null, false, true, null]],
-        1218 => [
+        1196 => [[['_route' => 'api_formateurs_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Formateur', '_api_item_operation_name' => 'get', 'id' => null], ['id'], ['GET' => 0], null, false, true, null]],
+        1217 => [
             [['_route' => 'api_formateurs_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Formateur', '_api_item_operation_name' => 'delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_formateurs_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Formateur', '_api_item_operation_name' => 'patch'], ['id'], ['PATCH' => 0], null, false, true, null],
             [['_route' => 'api_formateurs_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Formateur', '_api_item_operation_name' => 'put'], ['id'], ['PUT' => 0], null, false, true, null],
         ],
-        1237 => [[['_route' => 'api_a_d_m_i_ns_get_apprenant_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\ADMIN', '_api_item_operation_name' => 'get_apprenant'], ['id'], ['GET' => 0], null, false, true, null]],
-        1262 => [[['_route' => 'api_apprenants_get_apprenant_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Apprenant', '_api_item_operation_name' => 'get_apprenant'], ['id'], ['GET' => 0], null, false, true, null]],
-        1308 => [
+        1236 => [[['_route' => 'api_a_d_m_i_ns_get_apprenant_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\ADMIN', '_api_item_operation_name' => 'get_apprenant'], ['id'], ['GET' => 0], null, false, true, null]],
+        1261 => [[['_route' => 'api_apprenants_get_apprenant_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Apprenant', '_api_item_operation_name' => 'get_apprenant'], ['id'], ['GET' => 0], null, false, true, null]],
+        1307 => [
             [['_route' => 'api_niveaux_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Niveau', '_api_item_operation_name' => 'get'], ['id', '_format'], ['GET' => 0], null, false, true, null],
             [['_route' => 'api_niveaux_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Niveau', '_api_item_operation_name' => 'delete'], ['id', '_format'], ['DELETE' => 0], null, false, true, null],
             [['_route' => 'api_niveaux_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Niveau', '_api_item_operation_name' => 'put'], ['id', '_format'], ['PUT' => 0], null, false, true, null],
             [['_route' => 'api_niveaux_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Niveau', '_api_item_operation_name' => 'patch'], ['id', '_format'], ['PATCH' => 0], null, false, true, null],
         ],
-        1355 => [[['_route' => 'api_profils_users_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\User', '_api_subresource_operation_name' => 'api_profils_users_get_subresource', '_api_subresource_context' => ['property' => 'users', 'identifiers' => [['id', 'App\\Entity\\Profil', true]], 'collection' => true, 'operationId' => 'api_profils_users_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
-        1422 => [[['_route' => 'api_referentiels_groupe_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_subresource_operation_name' => 'api_referentiels_groupe_competences_get_subresource', '_api_subresource_context' => ['property' => 'groupeCompetences', 'identifiers' => [['id', 'App\\Entity\\Referentiel', true]], 'collection' => true, 'operationId' => 'api_referentiels_groupe_competences_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
-        1470 => [[['_route' => 'api_referentiels_groupe_competences_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Competence', '_api_subresource_operation_name' => 'api_referentiels_groupe_competences_competences_get_subresource', '_api_subresource_context' => ['property' => 'Competence', 'identifiers' => [['id', 'App\\Entity\\Referentiel', true], ['groupeCompetences', 'App\\Entity\\GroupeCompetence', true]], 'collection' => true, 'operationId' => 'api_referentiels_groupe_competences_competences_get_subresource']], ['id', 'groupeCompetences', '_format'], ['GET' => 0], null, false, true, null]],
-        1522 => [[['_route' => 'api_referentiels_groupe_competences_competences_groupe_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_subresource_operation_name' => 'api_referentiels_groupe_competences_competences_groupe_competences_get_subresource', '_api_subresource_context' => ['property' => 'groupeCompetences', 'identifiers' => [['id', 'App\\Entity\\Referentiel', true], ['groupeCompetences', 'App\\Entity\\GroupeCompetence', true], ['Competence', 'App\\Entity\\Competence', true]], 'collection' => true, 'operationId' => 'api_referentiels_groupe_competences_competences_groupe_competences_get_subresource']], ['id', 'groupeCompetences', 'Competence', '_format'], ['GET' => 0], null, false, true, null]],
-        1575 => [[['_route' => 'api_tags_groupetags_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_subresource_operation_name' => 'api_tags_groupetags_get_subresource', '_api_subresource_context' => ['property' => 'groupetag', 'identifiers' => [['id', 'App\\Entity\\Tag', true]], 'collection' => true, 'operationId' => 'api_tags_groupetags_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
-        1613 => [[['_route' => 'api_tags_groupetags_tags_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Tag', '_api_subresource_operation_name' => 'api_tags_groupetags_tags_get_subresource', '_api_subresource_context' => ['property' => 'tags', 'identifiers' => [['id', 'App\\Entity\\Tag', true], ['groupetag', 'App\\Entity\\GroupeTag', true]], 'collection' => true, 'operationId' => 'api_tags_groupetags_tags_get_subresource']], ['id', 'groupetag', '_format'], ['GET' => 0], null, false, true, null]],
-        1639 => [
+        1354 => [[['_route' => 'api_profils_users_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\User', '_api_subresource_operation_name' => 'api_profils_users_get_subresource', '_api_subresource_context' => ['property' => 'users', 'identifiers' => [['id', 'App\\Entity\\Profil', true]], 'collection' => true, 'operationId' => 'api_profils_users_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
+        1421 => [[['_route' => 'api_referentiels_groupe_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_subresource_operation_name' => 'api_referentiels_groupe_competences_get_subresource', '_api_subresource_context' => ['property' => 'groupeCompetences', 'identifiers' => [['id', 'App\\Entity\\Referentiel', true]], 'collection' => true, 'operationId' => 'api_referentiels_groupe_competences_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
+        1469 => [[['_route' => 'api_referentiels_groupe_competences_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Competence', '_api_subresource_operation_name' => 'api_referentiels_groupe_competences_competences_get_subresource', '_api_subresource_context' => ['property' => 'Competence', 'identifiers' => [['id', 'App\\Entity\\Referentiel', true], ['groupeCompetences', 'App\\Entity\\GroupeCompetence', true]], 'collection' => true, 'operationId' => 'api_referentiels_groupe_competences_competences_get_subresource']], ['id', 'groupeCompetences', '_format'], ['GET' => 0], null, false, true, null]],
+        1521 => [[['_route' => 'api_referentiels_groupe_competences_competences_groupe_competences_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeCompetence', '_api_subresource_operation_name' => 'api_referentiels_groupe_competences_competences_groupe_competences_get_subresource', '_api_subresource_context' => ['property' => 'groupeCompetences', 'identifiers' => [['id', 'App\\Entity\\Referentiel', true], ['groupeCompetences', 'App\\Entity\\GroupeCompetence', true], ['Competence', 'App\\Entity\\Competence', true]], 'collection' => true, 'operationId' => 'api_referentiels_groupe_competences_competences_groupe_competences_get_subresource']], ['id', 'groupeCompetences', 'Competence', '_format'], ['GET' => 0], null, false, true, null]],
+        1574 => [[['_route' => 'api_tags_groupetags_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\GroupeTag', '_api_subresource_operation_name' => 'api_tags_groupetags_get_subresource', '_api_subresource_context' => ['property' => 'groupetag', 'identifiers' => [['id', 'App\\Entity\\Tag', true]], 'collection' => true, 'operationId' => 'api_tags_groupetags_get_subresource']], ['id', '_format'], ['GET' => 0], null, false, true, null]],
+        1612 => [[['_route' => 'api_tags_groupetags_tags_get_subresource', '_controller' => 'api_platform.action.get_subresource', '_format' => null, '_api_resource_class' => 'App\\Entity\\Tag', '_api_subresource_operation_name' => 'api_tags_groupetags_tags_get_subresource', '_api_subresource_context' => ['property' => 'tags', 'identifiers' => [['id', 'App\\Entity\\Tag', true], ['groupetag', 'App\\Entity\\GroupeTag', true]], 'collection' => true, 'operationId' => 'api_tags_groupetags_tags_get_subresource']], ['id', 'groupetag', '_format'], ['GET' => 0], null, false, true, null]],
+        1638 => [
             [['_route' => 'api_formateurs_get_formateur_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Formateur', '_api_item_operation_name' => 'get_formateur'], ['id'], ['GET' => 0], null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

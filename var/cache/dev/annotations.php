@@ -868,7 +868,7 @@ return [[
 
 0 => 'N;',
 1 => [],
-2 => 1606746048,
+2 => 1606821714,
 3 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
@@ -1732,14 +1732,6 @@ return [[
                 ],
                 'itemOperations' => [
                     1 => [
-                        'get' => [
-                            'security' => 'is_granted(\'ROLE_ADMIN\')',
-                            'security_message' => 'Vous n\'avez pas ces privileges.',
-                            'path' => 'admin/apprenants/{id}',
-                            'defaults' => [
-                                'id' => null,
-                            ],
-                        ],
                         'get_apprenant' => [
                             'method' => 'GET',
                             'path' => '/apprenants/{id}',
@@ -2453,6 +2445,7 @@ return [[
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
             clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
             clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
         ],
@@ -2462,8 +2455,16 @@ return [[
                 'repositoryClass' => [
                     'App\\Repository\\ProfilRepository',
                 ],
-                'collectionOperations' => [
+                'fields' => [
+                    1 => 'libelle',
+                ],
+                'groups' => [
                     1 => [
+                        'Default',
+                    ],
+                ],
+                'collectionOperations' => [
+                    2 => [
                         'post' => [
                             'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
                             'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
@@ -2477,7 +2478,12 @@ return [[
                     ],
                 ],
                 'itemOperations' => [
-                    1 => [
+                    2 => [
+                        'api_questions_answer_get_subresource' => [
+                            'security' => 'is_granted(\'ROLE_ADMIN\')',
+                            'method' => 'GET',
+                            'path' => 'admin/profils/{id}/users',
+                        ],
                         'get' => [
                             'security' => 'is_granted(\'VIEW\',object)',
                             'security_message' => 'Vous n\'avez pas ce privilege.',
@@ -2501,7 +2507,7 @@ return [[
                     ],
                 ],
                 'attributes' => [
-                    1 => [
+                    2 => [
                         'normalization_context' => [
                             'groups' => [
                                 'profil_read',
@@ -2511,10 +2517,10 @@ return [[
                     ],
                 ],
                 'filterClass' => [
-                    2 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\BooleanFilter',
+                    3 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\BooleanFilter',
                 ],
                 'properties' => [
-                    2 => [
+                    3 => [
                         'Statut',
                     ],
                 ],
@@ -2524,6 +2530,7 @@ return [[
             $o[0],
             $o[1],
             $o[2],
+            $o[3],
         ],
         []
     );
@@ -2601,7 +2608,9 @@ return [[
 48 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\OneToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\OneToMany')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\OneToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\OneToMany')),
+            clone ($p['ApiPlatform\\Core\\Annotation\\ApiSubresource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiSubresource')),
+            clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
         ],
         null,
         [
@@ -2613,9 +2622,18 @@ return [[
                     'App\\Entity\\User',
                 ],
             ],
+            'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+                'groups' => [
+                    2 => [
+                        'profil_read',
+                    ],
+                ],
+            ],
         ],
         [
             $o[0],
+            $o[1],
+            $o[2],
         ],
         []
     );
@@ -2769,6 +2787,7 @@ return [[
             clone ($p['Doctrine\\ORM\\Mapping\\InheritanceType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\InheritanceType')),
             clone ($p['Doctrine\\ORM\\Mapping\\DiscriminatorColumn'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\DiscriminatorColumn')),
             clone ($p['Doctrine\\ORM\\Mapping\\DiscriminatorMap'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\DiscriminatorMap')),
+            clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
             clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
             clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
         ],
@@ -2794,8 +2813,19 @@ return [[
                 'type' => [
                     2 => 'string',
                 ],
-                'collectionOperations' => [
+                'fields' => [
                     4 => [
+                        'username',
+                        'email',
+                    ],
+                ],
+                'groups' => [
+                    4 => [
+                        'Default',
+                    ],
+                ],
+                'collectionOperations' => [
+                    5 => [
                         'add_user' => [
                             'method' => 'POST',
                             'path' => '/admin/users',
@@ -2815,7 +2845,7 @@ return [[
                     ],
                 ],
                 'itemOperations' => [
-                    4 => [
+                    5 => [
                         'get' => [
                             'security' => 'is_granted(\'ROLE_ADMIN\')',
                             'security_message' => 'Vous n\'avez pas ces privileges.',
@@ -2838,21 +2868,22 @@ return [[
                     ],
                 ],
                 'attributes' => [
-                    4 => [
+                    5 => [
                         'security' => 'is_granted(\'ROLE_ADMIN\')',
                         'normalization_context' => [
                             'groups' => [
                                 'user_read',
                                 'user_details_read',
+                                'enable_max_depth' => true,
                             ],
                         ],
                     ],
                 ],
                 'filterClass' => [
-                    5 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\BooleanFilter',
+                    6 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\BooleanFilter',
                 ],
                 'properties' => [
-                    5 => [
+                    6 => [
                         'Archivage',
                     ],
                 ],
@@ -2865,6 +2896,7 @@ return [[
             $o[3],
             $o[4],
             $o[5],
+            $o[6],
         ],
         []
     );
@@ -2927,7 +2959,6 @@ return [[
                 'groups' => [
                     1 => [
                         'user_read',
-                        'profil_read',
                         'formateur_read',
                     ],
                 ],

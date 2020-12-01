@@ -9,6 +9,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=TagRepository::class)
@@ -16,6 +17,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *     attributes={
  *
  *          "normalization_context"={"groups"={"tag_read","tag_details_read"}}
+ *
  *      },
  *    collectionOperations={
  *          "add_groupecompetence"={
@@ -26,7 +28,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *          },
  *         "show_groupecompetence"={
  *              "method"="GET",
- *              "security"="is_granted('ROLE_CM')",
+ *              "security"="is_granted('ROLE_CM','ROLE_FORMATEUR')",
  *              "security_message"="Vous n'avez pas acces a cette ressource.",
  *              "path"="admin/tags"
  *              },
@@ -62,26 +64,27 @@ class Tag
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"tag_read"})
+     * @Groups({"tag_read","groupetag_read"})
      */
     private $id;
 
     /**
      * @ORM\ManyToMany(targetEntity=GroupeTag::class, inversedBy="tags")
      * @ApiSubresource()
-     * @Groups({"tag_read"})
      */
     private $groupetag;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"tag_read","groupetag_read"})
+     * @Assert\NotBlank(message="Le libelle ne peut pas etre nul !!!")
      */
     private $libelle;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"tag_read","groupetag_read"})
+     * @Assert\NotBlank(message="La description ne peut pas etre nul !!!")
      */
     private $description;
 
@@ -142,4 +145,5 @@ class Tag
 
         return $this;
     }
+
 }

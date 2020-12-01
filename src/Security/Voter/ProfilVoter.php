@@ -34,7 +34,7 @@ class ProfilVoter extends Voter
                 return $user -> getRoles()[0] === "ROLE_ADMIN";
                 break;
             case 'VIEW':
-                return $user -> getRoles()[0] === "ROLE_ADMIN" || $user -> getRoles()[0] === "ROLE_CM";
+                return $user -> getRoles()[0] === "ROLE_ADMIN";
                 break;
         }
         return false;

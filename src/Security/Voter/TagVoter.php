@@ -42,7 +42,7 @@ class TagVoter extends Voter
                 return false;
                 break;
             case 'VIEW':
-                return $user -> getRoles()[0] === "ROLE_ADMIN" || $user -> getRoles()[0] === "ROLE_CM";
+                return $user -> getRoles()[0] === "ROLE_ADMIN" || $user -> getRoles()[0] === "ROLE_FORMATEUR";
                 break;
         }
 

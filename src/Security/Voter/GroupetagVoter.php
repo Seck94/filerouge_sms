@@ -28,21 +28,21 @@ class GroupetagVoter extends Voter
         // ... (check conditions and return true to grant permission) ...
         switch ($attribute) {
             case 'EDIT':
-                if ($user -> getRoles()[0] === "ROLE_ADMIN") {
+                if ($user -> getRoles()[0] === "ROLE_ADMIN" || $user -> getRoles()[0] === "ROLE_FORMATEUR") {
 
                     return true;
                 }
                 return false;
                 break;
             case 'DELETE':
-                if ($user -> getRoles()[0] === "ROLE_ADMIN") {
+                if ($user -> getRoles()[0] === "ROLE_ADMIN" || $user -> getRoles()[0] === "ROLE_FORMATEUR") {
 
                     return true;
                 }
                 return false;
                 break;
             case 'VIEW':
-                return $user -> getRoles()[0] === "ROLE_ADMIN" || $user -> getRoles()[0] === "ROLE_CM";
+                return $user -> getRoles()[0] === "ROLE_ADMIN" || $user -> getRoles()[0] === "ROLE_FORMATEUR";
                 break;
         }
 

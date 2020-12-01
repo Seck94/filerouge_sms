@@ -9,6 +9,7 @@ use App\Repository\UserRepository;
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping\DiscriminatorColumn;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Security\Core\User\UserInterface;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
@@ -20,10 +21,11 @@ use Symfony\Component\Validator\Constraints as Assert;
     * @ORM\InheritanceType("JOINED")
     * @ORM\DiscriminatorColumn(name="type", type="string")
     * @ORM\DiscriminatorMap({"user" = "User", "apprenant" = "Apprenant", "formateur" = "Formateur", "cm"="CM","admin"="ADMIN"})
+    * @UniqueEntity({"username","email"})
     * @ApiResource(
  *     attributes={
  *          "security"="is_granted('ROLE_ADMIN')",
- *          "normalization_context"={"groups"={"user_read","user_details_read"}}
+ *          "normalization_context"={"groups"={"user_read","user_details_read","enable_max_depth"=true}}
  *     },
  * 
  *     collectionOperations={
@@ -122,7 +124,7 @@ class User implements UserInterface
 
     /**
      * @ORM\ManyToOne(targetEntity=Profil::class, inversedBy="users",cascade={"persist"})
-     * @Groups({"user_read" ,"profil_read","formateur_read"})
+     * @Groups({"user_read","formateur_read"})
      */
     private $profil;
 

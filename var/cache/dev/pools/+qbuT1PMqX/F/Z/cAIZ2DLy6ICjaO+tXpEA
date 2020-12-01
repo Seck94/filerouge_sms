@@ -171,6 +171,7 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                         'groups' => [
                             'user_read',
                             'user_details_read',
+                            'enable_max_depth' => true,
                         ],
                     ],
                     'input' => null,

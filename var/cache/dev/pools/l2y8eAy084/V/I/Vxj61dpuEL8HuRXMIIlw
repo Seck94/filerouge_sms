@@ -1,0 +1,94 @@
+<?php //%255BApp%255CEntity%255CProfil%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'repositoryClass' => [
+                'App\\Repository\\ProfilRepository',
+            ],
+            'fields' => [
+                1 => 'libelle',
+            ],
+            'groups' => [
+                1 => [
+                    'Default',
+                ],
+            ],
+            'collectionOperations' => [
+                2 => [
+                    'post' => [
+                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'admin/profils',
+                    ],
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'admin/profils',
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                2 => [
+                    'api_questions_answer_get_subresource' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'method' => 'GET',
+                        'path' => 'admin/profils/{id}/users',
+                    ],
+                    'get' => [
+                        'security' => 'is_granted(\'VIEW\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'admin/profils/{id}',
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'EDIT\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege merci de garder les bonnes informations afin d\'avoir cette possibilité.',
+                        'path' => 'admin/profils/{id}',
+                    ],
+                    'patch' => [
+                        'security' => 'is_granted(\'EDIT\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'admin/profils/{id}',
+                    ],
+                    'put' => [
+                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'admin/profils/{id}',
+                    ],
+                ],
+            ],
+            'attributes' => [
+                2 => [
+                    'normalization_context' => [
+                        'groups' => [
+                            'profil_read',
+                            'profil_details_read',
+                        ],
+                    ],
+                ],
+            ],
+            'filterClass' => [
+                3 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\BooleanFilter',
+            ],
+            'properties' => [
+                3 => [
+                    'Statut',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+    ],
+    []
+); }];
