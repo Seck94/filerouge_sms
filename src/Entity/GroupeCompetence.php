@@ -23,12 +23,11 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *              "security_post_denormalize"="is_granted('EDIT', object)",
  *              "security_post_denormalize_message"="Vous n'avez pas ce privilege.",
  *          },
- *         "show_groupecompetence"={
+ *       "api_questions_answer_get_subresource"={
+ *              "security"="is_granted('ROLE_ADMIN')",
  *              "method"="GET",
- *              "security"="is_granted('ROLE_CM')",
- *              "security_message"="Vous n'avez pas acces a cette ressource.",
- *              "path"="admin/groupecompetences"
- *              },
+ *              "path"="admin/groupecompetence"
+ *     },
  *     },
  *
  *     itemOperations={
@@ -69,8 +68,9 @@ class GroupeCompetence
 
     /**
      * @ORM\ManyToMany(targetEntity=Competence::class, inversedBy="groupeCompetences")
-     * @Groups({"Grpcompetence_read"})
      * @ApiSubresource()
+     * @Groups({"Grpcompetence_read"})
+     *
      */
     private $Competence;
 

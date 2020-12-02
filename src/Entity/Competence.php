@@ -75,7 +75,7 @@ class Competence
 
     /**
      * @ORM\OneToMany(targetEntity=Niveau::class, mappedBy="Competence")
-     * @Groups({"competence_read","Grpcompetence_read"})
+     * @Groups({"competence_read"})
      */
     private $niveaux;
 

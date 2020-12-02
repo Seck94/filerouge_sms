@@ -139,11 +139,10 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                             ],
                         ],
                     ],
-                    'show_groupecompetence' => [
+                    'api_questions_answer_get_subresource' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
                         'method' => 'GET',
-                        'security' => 'is_granted(\'ROLE_CM\')',
-                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
-                        'path' => 'admin/groupecompetences',
+                        'path' => 'admin/groupecompetence',
                         'input' => null,
                         'output' => null,
                         'input_formats' => [

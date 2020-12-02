@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Repository\ADMINRepository;
 use App\Repository\CMRepository;
+use App\service\MailService;
 use App\service\UserService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -22,11 +23,15 @@ class AdminController extends AbstractController
      *
      * )
      */
-    public function addAdmin(UserService $upService, Request $request, EntityManagerInterface $manager)
+    public function addAdmin(UserService $upService, Request $request, EntityManagerInterface $manager,MailService $mailService)
     {
+
         $user = $upService->addUser($request,"ADMIN", "App\Entity\Admin");
+        //dd($user);
         $manager->persist($user);
         $manager->flush();
+
+        $mailService->Send($user->getEmail(),"notification","inscription reussit");
         return $this->json("Bien enregistrer", Response::HTTP_CREATED);
     }
     /**

@@ -21,7 +21,7 @@ use Symfony\Component\Validator\Constraints as Assert;
     * @ORM\InheritanceType("JOINED")
     * @ORM\DiscriminatorColumn(name="type", type="string")
     * @ORM\DiscriminatorMap({"user" = "User", "apprenant" = "Apprenant", "formateur" = "Formateur", "cm"="CM","admin"="ADMIN"})
-    * @UniqueEntity({"username","email"})
+    * @UniqueEntity({"username","Email"})
     * @ApiResource(
  *     attributes={
  *          "security"="is_granted('ROLE_ADMIN')",

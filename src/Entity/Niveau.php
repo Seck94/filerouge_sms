@@ -5,6 +5,7 @@ namespace App\Entity;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\NiveauRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=NiveauRepository::class)
@@ -35,6 +36,7 @@ class Niveau
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"competence_read","niveau_read"})
      */
     private $id;
 
@@ -45,16 +47,19 @@ class Niveau
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"competence_read","niveau_read"})
      */
     private $Descriptif;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"competence_read","niveau_read"})
      */
     private $GroupeAction;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"competence_read","niveau_read"})
      */
     private $GroupeEvaluation;
 

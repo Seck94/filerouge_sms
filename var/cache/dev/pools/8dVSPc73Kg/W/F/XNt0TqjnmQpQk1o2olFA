@@ -41,6 +41,24 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                     'groupeEvaluation' => $o[9],
                 ],
             ],
+            'groups' => [
+                1 => [
+                    'competence_read',
+                    'niveau_read',
+                ],
+                3 => [
+                    'competence_read',
+                    'niveau_read',
+                ],
+                [
+                    'competence_read',
+                    'niveau_read',
+                ],
+                [
+                    'competence_read',
+                    'niveau_read',
+                ],
+            ],
         ],
     ],
     $o[0],

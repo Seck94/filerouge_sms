@@ -45,11 +45,12 @@ class UserService
              $user["Avatar"] = $avatar;
         }
 
-        //dd("ça marche");
+
 
         $user = $this->serializer->denormalize($user,$entity);
 
         $errors = $this->validator->validate($user);
+        //dd($errors);
         if ($errors) {
             $errors = $this->serializer->serialize($errors, "json");
             return new JsonResponse($errors, Response::HTTP_BAD_REQUEST, [], true);

@@ -135,7 +135,7 @@ class GroupeCompetenceController extends AbstractController
 
     /**
      * @Route(
-     *     path="/api/admin/groupecompetences",
+     *     path="admin/groupecompetences",
      *     methods={"GET"},
      *     defaults={
      *          "__controller"="App\Controller\GroupecompetenceController::showGroupecompetence",
