@@ -36,8 +36,8 @@ class GroupeCompetenceController extends AbstractController
 
         $Groupecompetence_tab = $serializer -> decode($Groupecompetence_json,"json");
         $Groupecompetence = new Groupecompetence();
-        $Groupecompetence -> setLibelle($Groupecompetence_tab['libelle']);
-        $Groupecompetence -> setDescriptif($Groupecompetence_tab['descriptif']);
+        $Groupecompetence -> setLibelle($Groupecompetence_tab['Libelle']);
+        $Groupecompetence -> setDescriptif($Groupecompetence_tab['Descriptif']);
         $Competence_tab = $Groupecompetence_tab['competence'];
         foreach ($Competence_tab as $key => $value) {
             $competence = new Competence();
@@ -67,7 +67,7 @@ class GroupeCompetenceController extends AbstractController
     /**
      * @Route(
      *     path="/api/admin/groupecompetences/{id}",
-     *     methods={"PUT","PATCH"},
+     *     methods={"PUT"},
      *     defaults={
      *          "__controller"="App\Controller\GroupecompetenceController::updateGroupecompetence",
      *          "__api_resource_class"=GroupeCompetence::class,
@@ -84,10 +84,10 @@ class GroupeCompetenceController extends AbstractController
             return $this ->json(null, Response::HTTP_NOT_FOUND,);
         }
         if (isset($Groupecompetence_tab['libelle'])) {
-            $Groupecompetence -> setLibelle($Groupecompetence_tab['libelle']);
+            $Groupecompetence -> setLibelle($Groupecompetence_tab['Libelle']);
         }
         if (isset($Groupecompetence_tab['descriptif'])) {
-            $Groupecompetence -> setDescriptif($Groupecompetence_tab['descriptif']);
+            $Groupecompetence -> setDescriptif($Groupecompetence_tab['Descriptif']);
         }
         $Competence_tab = isset($Groupecompetence_tab['competence'])?$Groupecompetence_tab['competence']:[];
         if (!empty($Competence_tab)) {
@@ -98,15 +98,15 @@ class GroupeCompetenceController extends AbstractController
                     if (!($competence =  $cmp -> find($value['id']))) {
                         return $this ->json(null, Response::HTTP_NOT_FOUND,);
                     }
-                    if (isset($value['libelle'])) {
-                        $competence -> setLibelle($value['libelle']);
+                    if (isset($value['Libelle'])) {
+                        $competence -> setLibelle($value['Libelle']);
                     }
                     else {
                         $Groupecompetence -> removeCompetence($competence);
                     }
                 }
-                elseif(isset($value['libelle'])) {
-                    $competence -> setLibelle($value['libelle']);
+                elseif(isset($value['Libelle'])) {
+                    $competence -> setLibelle($value['Libelle']);
                     $Groupecompetence -> addCompetence($competence);
                 }
             }

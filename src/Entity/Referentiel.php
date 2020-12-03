@@ -8,13 +8,13 @@ use App\Repository\ReferentielRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=ReferentielRepository::class)
  * @ApiResource(
  * *     attributes={
  *          "security"="is_granted('ROLE_ADMIN')",
- *          "pagination_items_per_page"=10,
  *          "normalization_context"={"groups"={"referentiel_read","user_details_read","referentiel_groupecompetence_read"}}
  *     },
  *
@@ -79,39 +79,44 @@ class Referentiel
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"referentiel_read"})
      */
     private $id;
 
     /**
      * @ORM\ManyToMany(targetEntity=GroupeCompetence::class, mappedBy="Referentiel")
-     * @ApiSubresource()
+     * @Groups({"referentiel_read"})
      */
     private $groupeCompetences;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"referentiel_read"})
      */
     private $Libelle;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"referentiel_read"})
      */
     private $Presentation;
 
     /**
      * @ORM\Column(type="string", length=255)
-     */
-    private $Programme;
-
-    /**
-     * @ORM\Column(type="string", length=255)
+     * @Groups({"referentiel_read"})
      */
     private $CritereEvaluation;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"referentiel_read"})
      */
     private $CritereAdmission;
+
+    /**
+     * @ORM\Column(type="blob", nullable=true)
+     */
+    private $programme;
 
     public function __construct()
     {
@@ -174,18 +179,6 @@ class Referentiel
         return $this;
     }
 
-    public function getProgramme(): ?string
-    {
-        return $this->Programme;
-    }
-
-    public function setProgramme(string $Programme): self
-    {
-        $this->Programme = $Programme;
-
-        return $this;
-    }
-
     public function getCritereEvaluation(): ?string
     {
         return $this->CritereEvaluation;
@@ -206,6 +199,18 @@ class Referentiel
     public function setCritereAdmission(string $CritereAdmission): self
     {
         $this->CritereAdmission = $CritereAdmission;
+
+        return $this;
+    }
+
+    public function getProgramme()
+    {
+        return $this->programme;
+    }
+
+    public function setProgramme($programme): self
+    {
+        $this->programme = $programme;
 
         return $this;
     }

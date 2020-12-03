@@ -58,4 +58,35 @@ return [PHP_INT_MAX, [
         'condition' => '',
         'controller' => null,
     ],
+    'api_competences_groupe_competences_referentiels_get_subresource' => [
+        'property' => 'Referentiel',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\Referentiel',
+        'shortNames' => [
+            'Referentiel',
+            'GroupeCompetence',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\Competence',
+                true,
+            ],
+            [
+                'groupeCompetences',
+                'App\\Entity\\GroupeCompetence',
+                true,
+            ],
+        ],
+        'operation_name' => 'groupe_competences_referentiels_get_subresource',
+        'route_name' => 'api_competences_groupe_competences_referentiels_get_subresource',
+        'path' => '/competences/{id}/groupe_competences/{groupeCompetences}/referentiels.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
 ]];

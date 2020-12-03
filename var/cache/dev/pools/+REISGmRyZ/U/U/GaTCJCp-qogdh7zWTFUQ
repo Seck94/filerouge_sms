@@ -1,0 +1,3 @@
+<?php //route_name_01a5f3142364c9798adb1fbf9cac78bc
+
+return [PHP_INT_MAX, 'api_a_d_m_i_ns_get_item'];
