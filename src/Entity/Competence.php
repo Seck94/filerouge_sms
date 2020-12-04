@@ -14,7 +14,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * @ORM\Entity(repositoryClass=CompetenceRepository::class)
  * @ApiResource(
  *      attributes={
- *          "normalization_context"={"groups"={"competence_read","competence_details_read"}}
+ *          "normalization_context"={"groups"={"competence_read","competence_details_read"}},
+ *          "denormalization_context"={"groups"={"competence_write"}}
  *      },
  *    collectionOperations={
  *          "add_competence"={
@@ -63,7 +64,7 @@ class Competence
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"competence_read","Grpcompetence_read"})
+     * @Groups({"competence_read","Grpcompetence_read","grpcompetence_write"})
      */
     private $id;
 
@@ -74,20 +75,20 @@ class Competence
     private $groupeCompetences;
 
     /**
-     * @ORM\OneToMany(targetEntity=Niveau::class, mappedBy="Competence")
-     * @Groups({"competence_read"})
+     * @ORM\OneToMany(targetEntity=Niveau::class, mappedBy="Competence", cascade={"persist"})
+     * @Groups({"competence_read","competence_write","grpcompetence_write"})
      */
     private $niveaux;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"competence_read","Grpcompetence_read"})
+     * @Groups({"competence_read","Grpcompetence_read","competence_write","grpcompetence_write"})
      */
     private $Libelle;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"competence_read","Grpcompetence_read"})
+     * @Groups({"competence_read","Grpcompetence_read","competence_write","grpcompetence_write"})
      */
     private $Descriptif;
 

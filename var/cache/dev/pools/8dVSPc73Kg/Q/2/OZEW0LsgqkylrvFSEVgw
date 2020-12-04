@@ -39,17 +39,24 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 1 => [
                     'competence_read',
                     'Grpcompetence_read',
+                    'grpcompetence_write',
                 ],
                 3 => [
                     'competence_read',
+                    'competence_write',
+                    'grpcompetence_write',
                 ],
                 [
                     'competence_read',
                     'Grpcompetence_read',
+                    'competence_write',
+                    'grpcompetence_write',
                 ],
                 [
                     'competence_read',
                     'Grpcompetence_read',
+                    'competence_write',
+                    'grpcompetence_write',
                 ],
             ],
         ],

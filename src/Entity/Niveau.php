@@ -11,7 +11,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * @ORM\Entity(repositoryClass=NiveauRepository::class)
  * @ApiResource(
  *        attributes={
- *          "pagination_items_per_page"=10,
  *          "normalization_context"={"groups"={"niveau_read","niveau_details_read"}}
  *      },
  *     collectionOperations={
@@ -36,30 +35,31 @@ class Niveau
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"competence_read","niveau_read"})
+     * @Groups({"competence_read","niveau_read","competence_write","grpcompetence_write"})
      */
     private $id;
 
     /**
      * @ORM\ManyToOne(targetEntity=Competence::class, inversedBy="niveaux")
+     *
      */
     private $Competence;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"competence_read","niveau_read"})
+     * @Groups({"competence_read","niveau_read","competence_write","grpcompetence_write"})
      */
     private $Descriptif;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"competence_read","niveau_read"})
+     * @Groups({"competence_read","niveau_read","competence_write","grpcompetence_write"})
      */
     private $GroupeAction;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"competence_read","niveau_read"})
+     * @Groups({"competence_read","niveau_read","competence_write","grpcompetence_write"})
      */
     private $GroupeEvaluation;
 

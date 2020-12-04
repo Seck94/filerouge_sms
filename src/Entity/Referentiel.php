@@ -85,31 +85,31 @@ class Referentiel
 
     /**
      * @ORM\ManyToMany(targetEntity=GroupeCompetence::class, mappedBy="Referentiel")
-     * @Groups({"referentiel_read"})
+     * @Groups({"referentiel_read","referentiel_groupecompetence_read"})
      */
     private $groupeCompetences;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"referentiel_read"})
+     * @Groups({"referentiel_read","referentiel_groupecompetence_read"})
      */
     private $Libelle;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"referentiel_read"})
+     * @Groups({"referentiel_read","referentiel_groupecompetence_read"})
      */
     private $Presentation;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"referentiel_read"})
+     * @Groups({"referentiel_read","referentiel_groupecompetence_read"})
      */
     private $CritereEvaluation;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"referentiel_read"})
+     * @Groups({"referentiel_read","referentiel_groupecompetence_read"})
      */
     private $CritereAdmission;
 

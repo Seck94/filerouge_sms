@@ -109,13 +109,8 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
             ],
             'collectionOperations' => [
                 [
-                    'add_groupecompetence' => [
+                    'post' => [
                         'method' => 'POST',
-                        'path' => 'admin/groupecompetences',
-                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
-                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
-                        'input' => null,
-                        'output' => null,
                         'input_formats' => [
                             'jsonld' => [
                                 'application/ld+json',
@@ -139,12 +134,8 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                             ],
                         ],
                     ],
-                    'api_questions_answer_get_subresource' => [
-                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    'get' => [
                         'method' => 'GET',
-                        'path' => 'admin/groupecompetence',
-                        'input' => null,
-                        'output' => null,
                         'input_formats' => [
                             'jsonld' => [
                                 'application/ld+json',
@@ -185,6 +176,11 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                         'groups' => [
                             'Grpcompetence_read',
                             'Grpcompetence_details_read',
+                        ],
+                    ],
+                    'denormalization_context' => [
+                        'groups' => [
+                            'grpcompetence_write',
                         ],
                     ],
                     'input' => null,

@@ -53,18 +53,23 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 ],
                 [
                     'referentiel_read',
+                    'referentiel_groupecompetence_read',
                 ],
                 [
                     'referentiel_read',
+                    'referentiel_groupecompetence_read',
                 ],
                 [
                     'referentiel_read',
+                    'referentiel_groupecompetence_read',
                 ],
                 [
                     'referentiel_read',
+                    'referentiel_groupecompetence_read',
                 ],
                 [
                     'referentiel_read',
+                    'referentiel_groupecompetence_read',
                 ],
             ],
         ],

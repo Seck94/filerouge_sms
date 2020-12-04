@@ -188,6 +188,11 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                             'competence_details_read',
                         ],
                     ],
+                    'denormalization_context' => [
+                        'groups' => [
+                            'competence_write',
+                        ],
+                    ],
                     'input' => null,
                     'output' => null,
                 ],

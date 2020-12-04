@@ -14,21 +14,13 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * @ORM\Entity(repositoryClass=GroupeCompetenceRepository::class)
  * @ApiResource(
  *     attributes={
- *          "normalization_context"={"groups"={"Grpcompetence_read","Grpcompetence_details_read"}}
+ *          "normalization_context"={"groups"={"Grpcompetence_read","Grpcompetence_details_read"}},
+ *          "denormalization_context"={"groups"={"grpcompetence_write"}}
  *      },
  *     collectionOperations={
- *          "add_groupecompetence"={
- *              "method"="POST",
- *              "path"="admin/groupecompetences",
- *              "security_post_denormalize"="is_granted('EDIT', object)",
- *              "security_post_denormalize_message"="Vous n'avez pas ce privilege.",
- *          },
- *       "api_questions_answer_get_subresource"={
- *              "security"="is_granted('ROLE_ADMIN')",
- *              "method"="GET",
- *              "path"="admin/groupecompetence"
- *     },
- *     },
+ *           "post",
+ *           "get"
+ *   },
  *
  *     itemOperations={
  *         "get"={
@@ -39,12 +31,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *         "delete"={
  *              "security"="is_granted('DELETE',object)",
  *              "security_message"="Seul le proprietaite....",
- *              "path"="admin/groupecompetences/{id}",
- *         },
- *         "update_groupecompetence"={
- *              "method"="PATCH",
- *              "security"="is_granted('EDIT',object)",
- *              "security_message"="Vous n'avez pas ce privilege.",
  *              "path"="admin/groupecompetences/{id}",
  *         },
  *         "update_groupecompetence"={
@@ -67,9 +53,9 @@ class GroupeCompetence
     private $id;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Competence::class, inversedBy="groupeCompetences")
+     * @ORM\ManyToMany(targetEntity=Competence::class, inversedBy="groupeCompetences",cascade={"persist"})
      * @ApiSubresource()
-     * @Groups({"Grpcompetence_read"})
+     * @Groups({"Grpcompetence_read","grpcompetence_write"})
      *
      */
     private $Competence;
@@ -82,19 +68,19 @@ class GroupeCompetence
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"Grpcompetence_read","referentiel_read","referentiel_groupecompetence_read"})
+     * @Groups({"Grpcompetence_read","grpcompetence_write","referentiel_read","referentiel_groupecompetence_read"})
      */
     private $Libelle;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"Grpcompetence_read","referentiel_read","referentiel_groupecompetence_read"})
+     * @Groups({"Grpcompetence_read","grpcompetence_write","referentiel_read","referentiel_groupecompetence_read"})
      */
     private $Descriptif;
 
     /**
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="GroupeCompetence")
-     * @Groups({"Grpcompetence_read"})
+     * @Groups({"Grpcompetence_read","grpcompetence_write"})
      */
     private $user;
 
